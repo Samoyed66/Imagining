@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <!-- 忽略页面中的数字识别为电话号码,email识别 -->
+	    <meta name="format-detection" content="telephone=no, email=no" />
+	    <!-- 启用360浏览器的极速模式(webkit) -->
+	    <meta name="renderer" content="webkit">
+	    <!-- 避免IE使用兼容模式 -->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	    <meta name="HandheldFriendly" content="true">
+	    <!-- 微软的老式浏览器 -->
+	    <meta name="MobileOptimized" content="320">
+	    <!-- uc强制竖屏 -->
+	    <meta name="screen-orientation" content="portrait">
+	    <!-- QQ强制竖屏 -->
+	    <meta name="x5-orientation" content="portrait">
+	    <!-- UC强制全屏 -->
+	    <meta name="full-screen" content="yes">
+	    <!-- QQ强制全屏 -->
+	    <meta name="x5-fullscreen" content="true">
+	    <!-- UC应用模式 -->
+	    <meta name="browsermode" content="application">
+	    <!-- QQ应用模式 -->
+	    <meta name="x5-page-mode" content="app">
+	    <link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="lib/css/style.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/rest.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+	    <script type="text/javascript" src="lib/js/rem.js"></script>
+	</head>
+	<body>
+		<!--header-->
+		<header id="header">
+			<div class="header-top">
+				<p>中国移动  3G</p>
+				<p>
+					<span>&#xe6f2;</span>
+					<span class="fa fa-signal"></span>
+					<span class="fa fa-battery-2"></span>
+					16:25
+				</p>
+			</div>
+			<div class="header-back">
+				<a href="preson.html" class="back"></a>
+				<p>登录</p>
+				<a href="registered.html">注册</a>
+			</div>
+		</header>
+		<!--header end-->
+		<!--login-cont-->
+		<section id="box">
+			<form>
+				<ul class="login">
+					<li class="user">
+						<label>登录名</label>
+						<input type="text" placeholder="手机号码/用户名/邮箱" />
+						<i></i>
+					</li>
+					<li class="pwd">
+						<label>密码</label>
+						<input type="password" placeholder="登录密码" />
+						<i></i>
+					</li>
+					<li class="submit">
+						<input type="button" value="登录" />
+					</li>
+				</ul>
+			</form>
+			<div class="problem">
+				<a href="javascript:;">登录遇到问题？</a>
+				<a href="javascript:;">境外手机登录</a>
+			</div>
+			<div class="party">
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+			</div>
+		</section>
+		<!--login-cont-->
+		<div id="true-box">
+			<p>账号或密码不正确！</p>
+			<button>确定</button>
+		</div>
+		<!--滑块验证-->
+		<div id="check">
+			<div class="verBox">
+				<div id="imgVer"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="lib/js/zapot.min.js"></script>
+		<script type="text/javascript" src="lib/js/selector.js"></script>
+		<script type="text/javascript" src="lib/js/fx.js"></script>
+		<script type="text/javascript" src="lib/js/fx_methods.js"></script>
+		<script type="text/javascript" src="lib/js/touch.js"></script>
+		<script type="text/javascript" src="lib/js/img_ver.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+	</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <!-- 忽略页面中的数字识别为电话号码,email识别 -->
+	    <meta name="format-detection" content="telephone=no, email=no" />
+	    <!-- 启用360浏览器的极速模式(webkit) -->
+	    <meta name="renderer" content="webkit">
+	    <!-- 避免IE使用兼容模式 -->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	    <meta name="HandheldFriendly" content="true">
+	    <!-- 微软的老式浏览器 -->
+	    <meta name="MobileOptimized" content="320">
+	    <!-- uc强制竖屏 -->
+	    <meta name="screen-orientation" content="portrait">
+	    <!-- QQ强制竖屏 -->
+	    <meta name="x5-orientation" content="portrait">
+	    <!-- UC强制全屏 -->
+	    <meta name="full-screen" content="yes">
+	    <!-- QQ强制全屏 -->
+	    <meta name="x5-fullscreen" content="true">
+	    <!-- UC应用模式 -->
+	    <meta name="browsermode" content="application">
+	    <!-- QQ应用模式 -->
+	    <meta name="x5-page-mode" content="app">
+	    <link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/rest.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/registered.css"/>
+	    <script type="text/javascript" src="lib/js/rem.js"></script>
+	</head>
+	<body>
+		<!--header-->
+		<header id="header">
+			<div class="header-top">
+				<p>中国移动  3G</p>
+				<p>
+					<span>&#xe6f2;</span>
+					<span class="fa fa-signal"></span>
+					<span class="fa fa-battery-2"></span>
+					16:25
+				</p>
+			</div>
+			<div class="header-back">
+				<a href="preson.html" class="back"></a>
+				<p>注册</p>
+			</div>
+		</header>
+		<!--header end-->
+		<!--login-cont-->
+		<section id="box">
+			<form>
+				<ul class="login">
+					<li class="num">
+						<label>国家/地区</label>
+						<span>中国大陆 86</span>
+					</li>
+					<li class="user">
+						<label>手机号</label>
+						<input type="text" placeholder="常用手机号" />
+						<i></i>
+						<div class="point">
+							<span>请输入手机号</span>
+							<div class="tag"></div>
+						</div>
+					</li>
+					<li class="code">
+						<label>验证码</label>
+						<input type="text" placeholder="短信验证码"/>
+						<span class="btn">获取验证码</span>
+						<div class="point">
+							<span>请输入验证码</span>
+							<div class="tag"></div>
+						</div>
+					</li>
+					<li class="pwd">
+						<label>设置密码</label>
+						<input type="password" placeholder="6~12位大小写字母、数字" />
+						<i></i>
+						<i></i>
+						<div class="point">
+							<span>请输入密码</span>
+							<div class="tag"></div>
+						</div>
+					</li>
+					<li class="submit">
+						<input type="button" value="注册" />
+					</li>
+				</ul>
+			</form>
+		</section>
+		<!--login-cont end-->
+		<!--box-->
+		<div id="true-box">
+			<p>当前信息填写不正确！</p>
+			<button>确定</button>
+		</div>
+		<div id="mark">
+			<div class="success">
+				<p>恭喜您，注册成功！</p>
+				<p><span>5s</span>后自动跳转~~</p>
+			</div>
+		</div>
+		<!--box end-->
+		<script type="text/javascript" src="lib/js/zapot.min.js"></script>
+		<script type="text/javascript" src="lib/js/selector.js"></script>
+		<script type="text/javascript" src="lib/js/touch.js"></script>
+		<script type="text/javascript" src="lib/js/fx.js"></script>
+		<script type="text/javascript" src="lib/js/fx_methods.js"></script>
+		<script type="text/javascript" src="js/registered.js"></script>
+	</body>
+</html>

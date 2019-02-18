@@ -1,0 +1,35 @@
+{
+	"status": 0,
+	"data":[
+		{
+			"msrc": "images/tour/tour-cont01.jpg", 
+			"title": "曼谷+芭提雅6日5晚自由行(4钻)", 
+			"price": "3060"
+		},
+		{
+			"msrc": "images/tour/tour-cont02.jpg", 
+			"title": "美国东西海岸+夏威夷+波士顿+纽约+华盛顿+拉美国东西海岸+夏威夷+波士顿+纽约+华盛顿+拉", 
+			"price": "9099"
+		},
+		{
+			"msrc": "images/tour/tour-cont03.jpg", 
+			"title": "日本东京+大阪7日6晚自由行 【美食·购物】", 
+			"price": "5353"
+		},
+		{
+			"msrc": "images/tour/tour-cont04.jpg", 
+			"title": "意大利+梵蒂冈+瑞士+法国+维罗纳13日跟团游意大利+梵蒂冈+瑞士+法国+维罗纳13日跟团游", 
+			"price": "13999"
+		},
+		{
+			"msrc": "images/tour/tour-cont05.jpg", 
+			"title": "普吉岛6日5晚自由行·DIY自由定制，酒店任选海普吉岛6日5晚自由行·DIY自由定制，酒店任选海", 
+			"price": "1999"
+		},
+		{
+			"msrc": "images/tour/tour-cont06.jpg", 
+			"title": "澳大利亚悉尼+黄金海岸+墨尔本自由行·11天9晚澳大利亚悉尼+黄金海岸+墨尔本自由行·11天9晚", 
+			"price": "1999"
+		}
+	]
+}

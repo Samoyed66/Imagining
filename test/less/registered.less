@@ -1,0 +1,295 @@
+@resize:75rem;
+.bgm(@src: url(../images/sprites.png), @repeat: no-repeat, @x: -55/@resize, @y: -34/@resize, @c:transparent){
+    background: @arguments;
+    -webkit-background: @arguments;
+    -moz-background: @arguments;
+    -ms-background: @arguments;
+    -o-background: @arguments;
+    background-size: 750/@resize 950/@resize;
+    -webkit-background-size: 750/@resize 950/@resize;
+    -moz-background-size: 750/@resize 950/@resize;
+    -ms-background-size: 750/@resize 950/@resize;
+    -o-background-size: 750/@resize 950/@resize;
+}
+.bgc(@c:transparent){
+    background: @c;
+    -webkit-background: @c;
+    -moz-background: @c;
+    -ms-background: @c;
+    -o-background: @c;
+}
+.flex{
+    display: -webkit-box;/*老版本：iOS 6-, Safari 3.1-6*/
+    display: -moz-box;/*老版本：Firefox 19- */
+    display: -ms-flexbox;/*混合版本：IE10*/
+    display: -webkit-flex;/*新版本：Chrome*/
+    display: flex;/*标准规范：Opera 12.1, Firefox 20+*/
+}
+.place(@c:#ccc){
+    &::-webkit-input-placeholder{
+        color: @c;
+    }
+    &::-moz-input-placeholder{/* Firefox 19+ */
+        color: @c;
+    }
+    &:-moz-input-placeholder{/* Firefox 4 to 18 */
+        color: @c;
+    }
+    &:-ms-input-placeholder{
+        color: @c;
+    }
+}
+.bdr(@r:5/@resize){
+    border-radius: @r;
+    -moz-border-radius: @r;
+    -webkit-border-radius: @r;
+    -ms-border-radius: @r;
+    -o-border-radius: @r;
+}
+.tf(@s:scale(1.3)){
+    transform: @s;
+    -moz-transform: @s;
+    -ms-transform: @s;
+    -webkit-transform: @s;
+    -o-transform: @s;
+}
+.ts(@t:.3s){
+    transition: @t;
+    -moz-transition: @t;
+    -ms-transition: @t;
+    -webkit-transition: @t;
+}
+/*header change*/
+#header{
+    .bgc(#fff);
+    .header-back{
+        margin: 0 0 48/@resize 42/@resize;
+        font-size: 30/@resize;
+        color: #000;
+        text-align: center;
+        position: relative;
+        a{
+            display: inline-block;
+            width: 20/@resize;
+            height: 32/@resize;
+            position: absolute;
+            top: 5/@resize;
+            left: 0;
+            .bgm;
+        }
+        p{
+            position: absolute;
+            left: 47%;
+            top: 0;
+            .tf(translateX(-50%));
+        }
+    }
+}
+/*header change end*/
+/*login-cont*/
+#box{
+    position: absolute;
+    top: 137/@resize;
+    width: 100%;
+    padding: 48/@resize 47/@resize 0 48/@resize;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 2;
+    .login{
+        li{
+            height: 79/@resize;
+            line-height: 79/@resize;
+            border-bottom: 1px solid #ccc;
+            font-size: 25/@resize;
+            position: relative;
+            .flex;
+            label{
+                color: #808080;
+                display: block;
+                width: 168/@resize;
+            }
+            input{
+                color: #808080;
+                width: 100%;
+                font-size: 25/@resize;
+                .place;
+            }
+            i{
+                width: 75/@resize;
+                margin-right: 15/@resize;
+                .bgm(url(../images/sprites.png),no-repeat,-226/@resize,-5/@resize);
+            }
+            .point{
+                height: 60/@resize;
+                line-height: 60/@resize;
+                width: 300/@resize;
+                border: 1px solid red;
+                text-align: center;
+                position: absolute;
+                top: -100/@resize;
+                left: 300/@resize;
+                display: none;
+                color: red;
+                .bgc(#fff);
+                .bdr(30/@resize);
+                .tag{
+                    width: 40/@resize;
+                    height: 60/@resize;
+                    border-top: transparent;
+                    border-left: 1px solid red;
+                    border-right: transparent;
+                    border-bottom: 1px solid red;
+                    position: absolute;
+                    bottom: -30/@resize;
+                    left: 30/@resize;
+                    .tf(skew(-60deg) rotate(-54deg));
+                    .bgc(#fff);
+                }
+                span{
+                    position: relative;
+                    z-index: 10;
+                }
+            }
+            &.pwd{
+                input{
+                    text-indent: 17/@resize;
+                }
+                i{
+                    margin: 0;
+                    .bgm(url(../images/sprites.png),no-repeat,-226/@resize,-5/@resize);
+                    &:nth-of-type(2){
+                        display: inline-block;
+                        height: 100%;
+                        margin-left: -10/@resize;
+                        .bgm(url(../images/sprites.png),no-repeat,-280/@resize,-5/@resize);
+                    }
+                }
+                .point{
+                    top: 120/@resize;
+                    .tag{
+                        width: 45/@resize;
+                        border-bottom: transparent;
+                        border-right: 1px solid red;
+                        border-left: transparent;
+                        border-top: 1px solid red;
+                        top: -33/@resize;
+                        left: 45/@resize;
+                        .tf(skew(60deg) rotate(-54deg));
+                        .bgc(#fff);
+                    }
+                }
+            }
+            &.submit{
+                border-bottom: none;
+                height: 80/@resize;
+                width: 100%;
+                margin-top: 127/@resize;
+                .bgc(#f7c612);
+                .bdr;
+                input{
+                    color: white;
+                    font-size: 30/@resize;
+                }
+            }
+            &.user{
+                input{
+                    text-indent: 10/@resize;
+                }
+            }
+            &.code{
+                input{
+                    width: 445/@resize;
+                }
+                .btn{
+                    align-self: center;
+                    width: 190/@resize;
+                    height: 55/@resize;
+                    line-height: 55/@resize;
+                    font-size: 26/@resize;
+                    color: white;
+                    text-align: center;
+                    .bgc(#ccc);
+                    .bdr;
+                }
+            }
+            &.num{
+                span{
+                    font-size: 25/@resize;
+                }
+            }
+        }
+    }
+}
+/*login-cont end*/
+/*true-box*/
+#true-box{
+    width: 500/@resize;
+    height: 300/@resize;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 100;
+    border: 2/@resize solid #ccc;
+    transition: .3s;
+    .ts;
+    .bgc(white);
+    .bdr(20/@resize);
+    .tf(translateX(-50%) translateY(-180%));
+    p{
+        line-height: 180/@resize;
+        font-size: 40/@resize;
+        font-weight: bold;
+        text-align: center;
+    }
+    button{
+        width: 150/@resize;
+        height: 85/@resize;
+        vertical-align: top;
+        font-size: 40/@resize;
+        color: white;
+        position: relative;
+        left: 50%;
+        .tf(translateX(-55%));
+        .bgc(#0072ff);
+        .bdr(15/@resize);
+    }
+}
+/*true-box end*/
+/*mark*/
+#mark{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+    .bgc(rgba(0,0,0,.5));
+    .success{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 550/@resize;
+        height: 350/@resize;
+        .tf(translateX(-50%) translateY(-50%));
+        .bdr(50/@resize);
+        .bgc(white);
+        p{
+            text-align: center;
+            font-weight: bold;
+            &:first-child{
+                line-height: 200/@resize;
+                font-size: 44/@resize;
+            }
+            &:last-child{
+                font-size: 32/@resize;
+                span{
+                    color: red;
+                    padding-right: 10/@resize;
+                }
+            }
+        }
+    }
+}
+/*mark end*/

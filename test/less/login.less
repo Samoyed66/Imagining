@@ -1,0 +1,251 @@
+@resize:75rem;
+.bgm(@src: url(../images/sprites.png), @repeat: no-repeat, @x: -55/@resize, @y: -34/@resize, @c:transparent){
+    background: @arguments;
+    -webkit-background: @arguments;
+    -moz-background: @arguments;
+    -ms-background: @arguments;
+    -o-background: @arguments;
+    background-size: 750/@resize 950/@resize;
+    -webkit-background-size: 750/@resize 950/@resize;
+    -moz-background-size: 750/@resize 950/@resize;
+    -ms-background-size: 750/@resize 950/@resize;
+    -o-background-size: 750/@resize 950/@resize;
+}
+.bgc(@c:transparent){
+    background: @c;
+    -webkit-background: @c;
+    -moz-background: @c;
+    -ms-background: @c;
+    -o-background: @c;
+}
+.flex{
+    display: -webkit-box;/*老版本：iOS 6-, Safari 3.1-6*/
+    display: -moz-box;/*老版本：Firefox 19- */
+    display: -ms-flexbox;/*混合版本：IE10*/
+    display: -webkit-flex;/*新版本：Chrome*/
+    display: flex;/*标准规范：Opera 12.1, Firefox 20+*/
+}
+.place{
+    &::-webkit-input-placeholder{
+        color: #ccc;
+    }
+    &::-moz-input-placeholder{/* Firefox 19+ */
+        color: #ccc;
+    }
+    &:-moz-input-placeholder{/* Firefox 4 to 18 */
+        color: #ccc;
+    }
+    &:-ms-input-placeholder{
+        color: #ccc;
+    }
+}
+.bdr(@r:5/@resize){
+    border-radius: @r;
+    -moz-border-radius: @r;
+    -webkit-border-radius: @r;
+    -ms-border-radius: @r;
+    -o-border-radius: @r;
+}
+.tf(@s:translateX(-50%)){
+    transform: @s;
+    -moz-transform: @s;
+    -ms-transform: @s;
+    -webkit-transform: @s;
+    -o-transform: @s;
+}
+.ts(@t:.3s){
+    transition: @t;
+    -moz-transition: @t;
+    -ms-transition: @t;
+    -webkit-transition: @t;
+}
+/*header change*/
+#header{
+    .bgc(#fff);
+    .header-back{
+        margin: 0 0 48/@resize 42/@resize;
+        font-size: 30/@resize;
+        color: #000;
+        text-align: center;
+        position: relative;
+        a:first-child{
+            display: inline-block;
+            width: 20/@resize;
+            height: 32/@resize;
+            position: absolute;
+            top: 5/@resize;
+            left: 0;
+            .bgm;
+        }
+        a:last-child{
+            color: #14ae26;
+            font-size: 24/@resize;
+            float: right;
+            padding-right: 39/@resize;
+        }
+        p{
+            position: absolute;
+            left: 47%;
+            top: 0;
+            .tf;
+        }
+    }
+}
+/*header change end*/
+/*login-cont*/
+#box{
+    position: absolute;
+    top: 137/@resize;
+    width: 100%;
+    padding: 48/@resize 47/@resize 0 48/@resize;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    .login{
+        li{
+            height: 79/@resize;
+            line-height: 79/@resize;
+            border-bottom: 1px solid #ccc;
+            font-size: 25/@resize;
+            .flex;
+            label{
+                color: #808080;
+                display: block;
+                width: 168/@resize;
+            }
+            input{
+                width: 100%;
+                font-size: 25/@resize;
+                .place;
+            }
+            i{
+                width: 75/@resize;
+                margin-right: 15/@resize;
+                .bgm(url(../images/sprites.png),no-repeat,-226/@resize,-5/@resize);
+            }
+            &.pwd{
+                i{
+                    .bgm(url(../images/sprites.png),no-repeat,-282/@resize,-5/@resize);
+                }
+            }
+            &.submit{
+                border-bottom: none;
+                height: 80/@resize;
+                width: 100%;
+                margin: 63/@resize 0 40/@resize;
+                .bgc(#f7c612);
+                .bdr;
+                input{
+                    color: white;
+                    font-size: 30/@resize;
+                }
+            }
+        }
+    }
+    .problem{
+        .flex;
+        justify-content: space-between;
+        a{
+            font-size: 22/@resize;
+            color: #999;
+        }
+    }
+    .party{
+        .flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 412/@resize;
+        height: 70/@resize;
+        i{
+            display: block;
+            height: 100%;
+            width: 70/@resize;
+            .bgm(url(../images/sprites.png),no-repeat,-335/@resize,-15/@resize,#5bbe61);
+            .bdr(50%);
+            &:nth-of-type(2){
+                .bgm(url(../images/sprites.png),no-repeat,-407/@resize,-15/@resize,#56b1e8);
+            }
+            &:nth-of-type(3){
+                .bgm(url(../images/sprites.png),no-repeat,-480/@resize,-15/@resize,#666);
+            }
+            &:nth-of-type(4){
+                .bgm(url(../images/sprites.png),no-repeat,-552/@resize,-15/@resize,#dd6e67);
+            }
+            &:nth-of-type(5){
+                .bgm(url(../images/sprites.png),no-repeat,-624/@resize,-15/@resize,#5f76d4);
+            }
+        }
+    }
+}
+/*login-cont end*/
+/*true-box*/
+#true-box{
+    width: 500/@resize;
+    height: 300/@resize;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 1002;
+    border: 2/@resize solid #ccc;
+    transition: .3s;
+    .ts;
+    .bgc(white);
+    .bdr(20/@resize);
+    .tf(translateX(-50%) translateY(-180%));
+    p{
+        line-height: 180/@resize;
+        font-size: 40/@resize;
+        font-weight: bold;
+        text-align: center;
+    }
+    button{
+        width: 150/@resize;
+        height: 85/@resize;
+        vertical-align: top;
+        font-size: 40/@resize;
+        color: white;
+        position: relative;
+        left: 50%;
+        .tf(translateX(-55%));
+        .bgc(#0072ff);
+        .bdr(15/@resize);
+    }
+}
+/*true-box end*/
+/*滑块验证*/
+#check{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    display: none;
+    .bgc(rgba(0,0,0,.5));
+    .verBox {
+        position:fixed;
+        width:100%;
+        text-align:center;
+        left:50%;
+        top:50%;
+        padding-top:55px;
+        .tf(translateX(-50%) translateY(-50%));
+    }
+}
+#imgVer{
+    display:inline-block;
+    &>div{
+        &:nth-of-type(1){
+            p{
+                font-size: 14/@resize!important;
+            }
+        }
+        &:nth-of-type(2){
+            top: -60/@resize;
+            p{
+                font-size: 14/@resize!important;
+            }
+        }
+    }
+}
+/*滑块验证 end*/

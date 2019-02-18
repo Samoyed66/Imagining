@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <!-- 忽略页面中的数字识别为电话号码,email识别 -->
+	    <meta name="format-detection" content="telephone=no, email=no" />
+	    <!-- 启用360浏览器的极速模式(webkit) -->
+	    <meta name="renderer" content="webkit">
+	    <!-- 避免IE使用兼容模式 -->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	    <meta name="HandheldFriendly" content="true">
+	    <!-- 微软的老式浏览器 -->
+	    <meta name="MobileOptimized" content="320">
+	    <!-- uc强制竖屏 -->
+	    <meta name="screen-orientation" content="portrait">
+	    <!-- QQ强制竖屏 -->
+	    <meta name="x5-orientation" content="portrait">
+	    <!-- UC强制全屏 -->
+	    <meta name="full-screen" content="yes">
+	    <!-- QQ强制全屏 -->
+	    <meta name="x5-fullscreen" content="true">
+	    <!-- UC应用模式 -->
+	    <meta name="browsermode" content="application">
+	    <!-- QQ应用模式 -->
+	    <meta name="x5-page-mode" content="app">
+	    <link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/rest.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/destination.css"/>
+	    <script type="text/javascript" src="lib/js/rem.js"></script>
+	</head>
+	<body>
+		<ul id="dark"></ul>
+		<!--header-->
+		<header id="header">
+			<div class="header-top">
+				<p>中国移动  3G</p>
+				<p>
+					<span>&#xe6f2;</span>
+					<span class="fa fa-signal"></span>
+					<span class="fa fa-battery-2"></span>
+					16:25
+				</p>
+			</div>
+			<div class="header-back">
+				<a href="index.html" class="back"></a>
+				选择目的地
+			</div>
+			<div class="header-search">
+				<input type="search" placeholder="春季旅游节"/>
+			</div>
+		</header>
+		<!--header end-->
+		<!--cont-->
+		<section id="box">
+			<!--选项卡左侧-->
+			<ul class="box-left">
+				<li class="active">热门</li>
+				<li>国内</li>
+				<li>国外</li>
+			</ul>
+			<!--选项卡左侧 end-->
+			<!--选项卡右侧 ajax初始化显示-->
+			<div id="wrap">
+				<div id="scroll">
+					<ul class="box-right clear">
+						<li>
+							<a href="tour-details.html">
+								<img src="images/destination/cont01.jpg"/>
+							</a>
+							<a href="tour-details.html">上海迪士尼</a>
+						</li>
+						<li>
+							<a href="tour-details.html">
+								<img src="images/destination/cont02.jpg"/>
+							</a>
+							<a href="tour-details.html">云南</a>
+						</li>
+						<li>
+							<a href="tour-details.html">
+								<img src="images/destination/cont03.jpg"/>
+							</a>
+							<a href="tour-details.html">厦门</a>
+						</li>
+						<li>
+							<a href="tour-details.html">
+								<img src="images/destination/cont04.jpg"/>
+							</a>
+							<a href="tour-details.html">香港</a>
+						</li>
+						<li>
+							<a href="tour-details.html">
+								<img src="images/destination/cont05.jpg"/>
+							</a>
+							<a href="tour-details.html">法国</a>
+						</li>
+						<li>
+							<a href="tour-details.html">
+								<img src="images/destination/cont06.jpg"/>
+							</a>
+							<a href="tour-details.html">泰国</a>
+						</li>
+						<li>
+							<a href="tour-details.html">
+								<img src="images/destination/cont07.jpg"/>
+							</a>
+							<a href="tour-details.html">美国</a>
+						</li>
+						<li>
+							<a href="tour-details.html">
+								<img src="images/destination/cont08.jpg"/>
+							</a>
+							<a href="tour-details.html">德国</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--选项卡右侧 end-->
+		</section>
+		<!--cont end-->
+		<!--footer-->
+		<footer id="footer">
+			<ul>
+				<li>
+					<a href="index.html">首 页</a>
+				</li>
+				<li>
+					<a href="destination.html">目 的 地</a>
+				</li>
+				<li>
+					<a href="history.html">浏 览 历 史</a>
+				</li>
+				<li>
+					<a href="preson.html">个 人</a>
+				</li>
+			</ul>
+		</footer>
+		<!--footer end-->
+		<!--百度模板-->
+		<script type="text/html" id="desList">
+			<%for (var j = 0; j<menulist.length; j++){%>
+				<li>
+					<a href="tour-details.html">
+						<img src=<%=menulist[j].msrc%>/>
+					</a>
+					<a href="tour-details.html"><%=menulist[j].title%></a>
+				</li>
+			<%}%>
+		</script>
+		<!--百度模板 end-->
+	    <script type="text/javascript" src="lib/js/zapot.min.js"></script>
+	    <script type="text/javascript" src="lib/js/fx.js"></script>
+	    <script type="text/javascript" src="lib/js/fx_methods.js"></script>
+	    <script type="text/javascript" src="lib/js/baiduTemplate.js"></script>
+	    <script type="text/javascript" src="lib/js/selector.js"></script>
+	    <script type="text/javascript" src="lib/js/touch.js"></script>
+	    <script type="text/javascript" src="lib/js/iscroll4.js"></script>
+	    <script type="text/javascript" src="lib/js/swiper.min.js"></script>
+	    <script type="text/javascript" src="js/destination.js"></script>
+	</body>
+</html>

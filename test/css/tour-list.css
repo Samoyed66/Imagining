@@ -1,0 +1,593 @@
+.flex {
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+.place::-webkit-input-placeholder {
+  color: #fff;
+}
+.place::-moz-input-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+.place:-moz-input-placeholder {
+  /* Firefox 4 to 18 */
+  color: #fff;
+}
+.place:-ms-input-placeholder {
+  color: #fff;
+}
+#dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 1.82666667rem 0.26666667rem 0;
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+}
+#dark li {
+  font-size: 0.64rem;
+  line-height: 1.01333333rem;
+}
+#city-wrap {
+  position: absolute;
+  z-index: 19;
+  font-size: 0.42666667rem;
+  top: 1.82666667rem;
+  display: none;
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+}
+#city-wrap .showLetter {
+  position: fixed;
+  color: #105eae;
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  top: 45%;
+  left: 45%;
+  border-radius: 50%;
+  border: #105eae 0.01333333rem solid;
+  text-align: center;
+  display: none;
+}
+#city-wrap .showLetter span {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  font-size: 0.8rem;
+}
+#city-wrap .letter {
+  width: auto;
+  position: fixed;
+  top: 1.82666667rem;
+  right: 0.06666667rem;
+  text-align: center;
+}
+#city-wrap .letter ul {
+  list-style-type: none;
+}
+#city-wrap .letter ul li a {
+  text-decoration: none;
+  color: #105eae;
+  font-size: 0.37333333rem;
+}
+#city-wrap .container {
+  width: 90%;
+  right: 0.26666667rem;
+  overflow: scroll;
+}
+#city-wrap .container .city {
+  width: 90%;
+  padding: 0.26666667rem 0.26666667rem 0.13333333rem;
+}
+#city-wrap .container .history {
+  margin-top: 0.2rem;
+}
+#city-wrap .container .hot {
+  overflow: hidden;
+}
+#city-wrap .container .hot div {
+  display: block;
+  width: 29%;
+  height: 0.53333333rem;
+  float: left;
+  text-align: center;
+  line-height: 0.53333333rem;
+  color: #afafaf;
+  margin-top: 0.13333333rem;
+  margin-right: 3%;
+  border: 0.01333333rem solid #eeeeee;
+  border-radius: 0.06666667rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#city-wrap .container .clear-history {
+  display: block;
+  float: right;
+}
+#city-wrap .container .city-list {
+  width: 100%;
+}
+#city-wrap .container .city-list .city-letter {
+  font-size: 0.42666667rem;
+  display: inline-block;
+  padding-top: 0.2rem;
+  padding-bottom: 0.06666667rem;
+  border-bottom: 0.01333333rem solid #e8ecf1;
+  width: 100%;
+}
+#city-wrap .container .city-list p {
+  color: #afafaf;
+  width: 95%;
+  min-height: 0.66666667rem;
+  line-height: 0.66666667rem;
+  border-bottom: 0.01333333rem solid #e8ecf1;
+  cursor: pointer;
+}
+#city-wrap .container .UISelect {
+  margin-top: 0.06666667rem;
+}
+#city-wrap {
+  position: relative;
+  z-index: 19;
+  font-size: 0.42666667rem;
+  height: 100%;
+  top: 1.82666667rem;
+  display: none;
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+}
+#city-wrap .showLetter {
+  position: fixed;
+  color: #105eae;
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  top: 45%;
+  left: 45%;
+  border-radius: 50%;
+  border: #105eae 0.01333333rem solid;
+  text-align: center;
+  display: none;
+}
+#city-wrap .showLetter span {
+  width: 1.33333333rem;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  font-size: 0.8rem;
+}
+#city-wrap .letter {
+  width: auto;
+  position: fixed;
+  top: 1.82666667rem;
+  right: 0.06666667rem;
+  text-align: center;
+}
+#city-wrap .letter ul {
+  list-style-type: none;
+}
+#city-wrap .letter ul li a {
+  text-decoration: none;
+  color: #105eae;
+  font-size: 0.37333333rem;
+}
+#city-wrap .container {
+  width: 90%;
+  right: 0.26666667rem;
+  overflow: scroll;
+}
+#city-wrap .container .city {
+  width: 90%;
+  padding: 0.26666667rem 0.26666667rem 0.13333333rem;
+}
+#city-wrap .container .history {
+  margin-top: 0.2rem;
+}
+#city-wrap .container .hot {
+  overflow: hidden;
+}
+#city-wrap .container .hot div {
+  display: block;
+  width: 29%;
+  height: 0.53333333rem;
+  float: left;
+  text-align: center;
+  line-height: 0.53333333rem;
+  color: #afafaf;
+  margin-top: 0.13333333rem;
+  margin-right: 3%;
+  border: 0.01333333rem solid #eeeeee;
+  border-radius: 0.06666667rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#city-wrap .container .clear-history {
+  display: block;
+  float: right;
+}
+#city-wrap .container .city-list {
+  width: 100%;
+}
+#city-wrap .container .city-list .city-letter {
+  font-size: 0.42666667rem;
+  display: inline-block;
+  padding-top: 0.2rem;
+  padding-bottom: 0.06666667rem;
+  border-bottom: 0.01333333rem solid #e8ecf1;
+  width: 100%;
+}
+#city-wrap .container .city-list p {
+  color: #afafaf;
+  width: 95%;
+  min-height: 0.66666667rem;
+  line-height: 0.66666667rem;
+  border-bottom: 0.01333333rem solid #e8ecf1;
+  cursor: pointer;
+}
+#city-wrap .container .UISelect {
+  margin-top: 0.06666667rem;
+}
+/*header*/
+#header {
+  z-index: 20;
+  background: #14ae26;
+  -webkit-background: #14ae26;
+  -moz-background: #14ae26;
+  -ms-background: #14ae26;
+  -o-background: #14ae26;
+}
+#header .tour-head {
+  width: 8.22666667rem;
+  height: 0.70666667rem;
+  line-height: 0.70666667rem;
+  border: 0.02666667rem solid #ffffff;
+  position: relative;
+  left: 50%;
+  align-items: center;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 0.34666667rem;
+  -moz-border-radius: 0.34666667rem;
+  -webkit-border-radius: 0.34666667rem;
+  -ms-border-radius: 0.34666667rem;
+  -o-border-radius: 0.34666667rem;
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+#header .tour-head .tour-des {
+  height: 100%;
+  font-size: 0.33333333rem;
+  color: white;
+  padding-right: 0.4rem;
+  border-right: 0.02666667rem solid #ffffff;
+}
+#header .tour-head .tour-des:before {
+  content: '';
+  display: inline-block;
+  width: 0.33333333rem;
+  height: 0.45333333rem;
+  margin: 0 0.18666667rem 0 0.26666667rem;
+  vertical-align: middle;
+  background: url(../images/sprites.png) no-repeat -8.32rem -3.50666667rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -8.32rem -3.50666667rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -8.32rem -3.50666667rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -8.32rem -3.50666667rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -8.32rem -3.50666667rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#header .tour-head .tour-search {
+  height: 100%;
+}
+#header .tour-head .tour-search input {
+  height: 100%;
+  width: 4.13333333rem;
+  vertical-align: top;
+  font-size: 0.33333333rem;
+  background: transparent;
+  -webkit-background: transparent;
+  -moz-background: transparent;
+  -ms-background: transparent;
+  -o-background: transparent;
+}
+#header .tour-head .tour-search input::-webkit-input-placeholder {
+  color: #fff;
+}
+#header .tour-head .tour-search input::-moz-input-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+#header .tour-head .tour-search input:-moz-input-placeholder {
+  /* Firefox 4 to 18 */
+  color: #fff;
+}
+#header .tour-head .tour-search input:-ms-input-placeholder {
+  color: #fff;
+}
+#header .tour-head .tour-search:before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 0.8rem;
+  height: 100%;
+  background: url(../images/sprites.png) no-repeat -4.98666667rem -2.30666667rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -4.98666667rem -2.30666667rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -4.98666667rem -2.30666667rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -4.98666667rem -2.30666667rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -4.98666667rem -2.30666667rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#header .tour-head a:first-child {
+  display: inline-block;
+  width: 0.26666667rem;
+  height: 0.42666667rem;
+  position: absolute;
+  top: 50%;
+  left: -0.56rem;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+/*header end*/
+/*tour-cont*/
+#box {
+  width: 100%;
+  position: absolute;
+  top: 1.82666667rem;
+  bottom: 1.33333333rem;
+}
+#box .box-head {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  justify-content: space-between;
+  background: #f4f4f4;
+  -webkit-background: #f4f4f4;
+  -moz-background: #f4f4f4;
+  -ms-background: #f4f4f4;
+  -o-background: #f4f4f4;
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+#box .box-head li {
+  width: 20%;
+  font-size: 0.32rem;
+  color: #666;
+  text-align: center;
+}
+#box .box-head li.active {
+  color: #14ae26;
+  line-height: 1.09333333rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 0.10666667rem solid #f7c612;
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+}
+#box .wrap {
+  padding: 0 0.29333333rem 1.36rem 0.32rem;
+}
+#box .wrap .list-cont {
+  height: 2.36rem;
+  padding: 0.49333333rem 0 0.4rem 0;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+#box .wrap .list-cont .list-pic {
+  position: relative;
+  margin: 0.01333333rem 0.2rem 0 0;
+}
+#box .wrap .list-cont .list-pic img {
+  width: 2.64rem;
+  height: 2.36rem;
+  border: 1px solid #ccc;
+}
+#box .wrap .list-cont .pic-cont {
+  width: 6.52rem;
+}
+#box .wrap .list-cont .pic-cont h4 {
+  padding-bottom: 0.21333333rem;
+}
+#box .wrap .list-cont .pic-cont h4 a {
+  display: block;
+  font-size: 0.34666667rem;
+  color: #343434;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#box .wrap .list-cont .pic-cont div {
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+#box .wrap .list-cont .pic-cont div:nth-of-type(1) span {
+  display: block;
+  padding: 0.06666667rem 0.13333333rem 0.06666667rem 0.09333333rem;
+  font-size: 0.26666667rem;
+  color: #666;
+  border: 1px solid #666;
+  margin: 0 0.17333333rem 0.09333333rem 0;
+}
+#box .wrap .list-cont .pic-cont div:nth-of-type(1) span:last-child {
+  background: #49c1e3;
+  -webkit-background: #49c1e3;
+  -moz-background: #49c1e3;
+  -ms-background: #49c1e3;
+  -o-background: #49c1e3;
+  color: white;
+  border: none;
+}
+#box .wrap .list-cont .pic-cont div:last-child {
+  height: 0.64rem;
+  line-height: 0.64rem;
+  font-size: 0.29333333rem;
+  color: #676767;
+}
+#box .wrap .list-cont .pic-cont div:last-child p:nth-of-type(1) {
+  font-size: 0.18666667rem;
+  padding-right: 0.62666667rem;
+  line-height: 0.56rem;
+}
+#box .wrap .list-cont .pic-cont div:last-child p:nth-of-type(1) span {
+  font-size: 0.33333333rem;
+  color: #f78312;
+}
+#box .wrap .list-cont .pic-cont div:last-child p:nth-of-type(1) span i {
+  font-size: 0.16rem;
+  vertical-align: top;
+}
+#box .wrap .list-cont .pic-cont div:last-child p:nth-of-type(2) {
+  padding-right: 0.57333333rem;
+}
+#box .wrap .list-cont .pic-cont div:last-child p:nth-of-type(2) span {
+  color: #999;
+}
+#box .wrap .list-cont .pic-cont div:last-child p:nth-of-type(3) {
+  padding-right: 0.16rem;
+}
+#box .wrap .list-cont .pic-cont div:last-child p:nth-of-type(3) span {
+  color: #999;
+}
+#box .wrap .list-cont .pic-cont div:last-child p:nth-of-type(4) {
+  font-size: 0.16rem;
+  color: #999;
+  width: 0.77333333rem;
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-top: -0.04rem;
+  background: #f6f6f6;
+  -webkit-background: #f6f6f6;
+  -moz-background: #f6f6f6;
+  -ms-background: #f6f6f6;
+  -o-background: #f6f6f6;
+}
+#box .wrap .list-cont .pic-cont div:last-child p:nth-of-type(4) span {
+  font-size: 0.34666667rem;
+  color: #676767;
+}
+#box .wrap .list-cont .pic-cont > p {
+  font-size: 0.29333333rem;
+  color: #666;
+  height: 0.41333333rem;
+  line-height: 0.41333333rem;
+}
+#box .wrap .list-cont .pic-cont > p span {
+  color: #02cc66;
+  padding-right: 0.17333333rem;
+}
+#box .wrap .icon .list-pic i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.93333333rem;
+  height: 0.93333333rem;
+  background: url(../images/sprites.png) no-repeat -6.74666667rem -9.49333333rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -6.74666667rem -9.49333333rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -6.74666667rem -9.49333333rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -6.74666667rem -9.49333333rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -6.74666667rem -9.49333333rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+/*tour-cont end*/
+/*footer*/
+#footer ul li:first-child a:before {
+  background: url(../images/sprites.png) no-repeat -7.37333333rem -3.14666667rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -7.37333333rem -3.14666667rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -7.37333333rem -3.14666667rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -7.37333333rem -3.14666667rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -7.37333333rem -3.14666667rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+/*footer end*/

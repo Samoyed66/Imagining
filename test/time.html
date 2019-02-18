@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <!-- 忽略页面中的数字识别为电话号码,email识别 -->
+	    <meta name="format-detection" content="telephone=no, email=no" />
+	    <!-- 启用360浏览器的极速模式(webkit) -->
+	    <meta name="renderer" content="webkit">
+	    <!-- 避免IE使用兼容模式 -->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	    <meta name="HandheldFriendly" content="true">
+	    <!-- 微软的老式浏览器 -->
+	    <meta name="MobileOptimized" content="320">
+	    <!-- uc强制竖屏 -->
+	    <meta name="screen-orientation" content="portrait">
+	    <!-- QQ强制竖屏 -->
+	    <meta name="x5-orientation" content="portrait">
+	    <!-- UC强制全屏 -->
+	    <meta name="full-screen" content="yes">
+	    <!-- QQ强制全屏 -->
+	    <meta name="x5-fullscreen" content="true">
+	    <!-- UC应用模式 -->
+	    <meta name="browsermode" content="application">
+	    <!-- QQ应用模式 -->
+	    <meta name="x5-page-mode" content="app">
+	    <link rel="stylesheet" type="text/css" href="css/rest.css"/>
+	    <link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="lib/css/time-swiper.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="lib/css/calendar_base.css"/>
+	    <link rel="stylesheet" type="text/css" href="lib/css/showcase.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/time.css"/>
+	    <script type="text/javascript" src="lib/js/rem.js"></script>
+	</head>
+	<body>
+		<!--header-->
+		<header id="header">
+			<div class="header-top">
+				<p>中国移动  3G</p>
+				<p>
+					<span>&#xe6f2;</span>
+					<span class="fa fa-signal"></span>
+					<span class="fa fa-battery-2"></span>
+					16:25
+				</p>
+			</div>
+			<div class="header-back">
+				<a href="tour-details.html" class="back"></a>
+				<p>选择日期和人数</p>
+				<a href="javascript:;">起价说明</a>
+			</div>
+		</header>
+		<!--header end-->
+		<section id="box">
+			<div class="time">
+				<div class="em-journal-title">
+					<div class="em-per-block pre">
+						<span class="fa fa-angle-left"></span>
+					</div>
+					<div class="em-per-block mid">
+						<span></span>
+					</div>
+					<div class="em-per-block next">
+						<span class="fa fa-angle-right"></span>
+					</div>
+				</div>
+				<div id="calendar"></div>
+			</div>
+			<ul class="num-person">
+				<li class="clear">
+					<p>成人<span>¥3159/人</span></p>
+					<div>
+						<input type="button" value="-" />
+						<input type="text" value="0" />
+						<input type="button" value="+" />
+					</div>
+				</li>
+				<li class="clear">
+					<p>儿童<span>¥1500/人</span></p>
+					<div>
+						<input type="button" value="-" />
+						<input type="text" value="0" />
+						<input type="button" value="+" />
+					</div>
+				</li>
+				<li>
+					<div>
+						<input id="check" type="checkbox"/>
+						<label for="check">携带幼儿<span>0~2岁</span></label>
+					</div>
+				</li>
+				<li>
+					<p>最少1人起订，年龄2—12周岁，不占床，不含早，只含当地的正餐半餐、车位以及导服，其他需要自理。成人+儿童最多支持9人，<span>*以上价格均为起价</span></p>
+				</li>
+			</ul>
+		</section>
+		<!--footer-->
+		<footer id="footer">
+			<div class="footer-left">
+				<span>总额:</span>
+				<span>¥0</span>
+				<span>明细></span>
+			</div>
+			<a href="select.html">下一步<span>选择资源</span></a>
+		</footer>
+		<!--footer end-->
+		<script type="text/javascript" src="lib/js/zapot.min.js"></script>
+		<script type="text/javascript" src="lib/js/selector.js"></script>
+		<script type="text/javascript" src="lib/js/touch.js"></script>
+		<script type="text/javascript" src="lib/js/time-swiper.min.js"></script>
+		<script type="text/javascript" src="lib/js/calendar_base.js"></script>
+		<script type="text/javascript" src="lib/js/calendar_showcase.js"></script>
+		<script type="text/javascript" src="lib/js/mustache.min.js"></script>
+		<script type="text/javascript" src="js/time.js"></script>
+	</body>
+</html>

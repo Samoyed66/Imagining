@@ -1,0 +1,151 @@
+@resize:75rem;
+
+/*字体库*/
+@font-face {font-family: "iconfont";
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+/*字体库 end*/
+
+.bgi(@src: url(../images/sprites.png), @repeat: no-repeat, @x: -42/@resize, @y: -160/@resize){
+    background: @arguments;
+    -webkit-background: @arguments;
+    -moz-background: @arguments;
+    -ms-background: @arguments;
+    -o-background: @arguments;
+    background-size: 750/@resize 950/@resize;
+    -webkit-background-size: 750/@resize 950/@resize;
+    -moz-background-size: 750/@resize 950/@resize;
+    -ms-background-size: 750/@resize 950/@resize;
+    -o-background-size: 750/@resize 950/@resize;
+}
+.flex{
+    display: -webkit-box;/*老版本：iOS 6-, Safari 3.1-6*/
+    display: -moz-box;/*老版本：Firefox 19- */
+    display: -ms-flexbox;/*混合版本：IE10*/
+    display: -webkit-flex;/*新版本：Chrome*/
+    display: flex;/*标准规范：Opera 12.1, Firefox 20+*/
+    justify-content: space-between;
+}
+.bgm(@c:transparent){
+    background: @c;
+    -webkit-background: @c;
+    -moz-background: @c;
+    -ms-background: @c;
+    -o-background: @c;
+}
+/*header*/
+#header{
+    width: 100%;
+    height: 137/@resize;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    .bgm(rgba(0,0,0,.7));
+    .header-top{
+        .flex;
+        color: white;
+        font-size: 19/@resize;
+        padding: 12/@resize 30/@resize 24/@resize 34/@resize;
+        p:last-child{
+            span{
+                padding-right: 4/@resize;
+                &:nth-child(2){
+                    padding: 0 17/@resize 0 10/@resize;
+                }
+                &:first-child{
+                    font-family: "iconfont";
+                    font-size: 25/@resize;
+                    &:after{
+                        content: '3G';
+                        font-size: 15/@resize;
+                        vertical-align: top;
+                    }
+                }
+            }
+        }
+    }
+    .header-search{
+        width: 673/@resize;
+        height: 53/@resize;
+        border: 2px solid #fff;
+        border-radius: 26/@resize;
+        -moz-border-radius: 26/@resize;
+        -webkit-border-radius: 26/@resize;
+        .flex;
+        position: relative;
+        left: 50%;
+        margin-left: -336/@resize;
+        input{
+            width: 613/@resize;
+            height: 100%;
+            line-height: 53/@resize;
+            color: #fff;
+            font-size: 26/@resize;
+            .bgm;
+            &::-webkit-input-placeholder{
+                color: #fff;
+            }
+            &::-moz-input-placeholder{/* Firefox 19+ */
+                color: #fff;
+            }
+            &:-moz-input-placeholder{/* Firefox 4 to 18 */
+                color: #fff;
+            }
+            &:-ms-input-placeholder{
+                color: #fff;
+            }
+        }
+        &:before{
+            content: '';
+            width: 60/@resize;
+            height: 100%;
+            .bgi(url(../images/sprites.png), no-repeat, -374/@resize, -173/@resize);
+        }
+    }
+}
+/*header end*/
+/*footer*/
+#footer{
+    width: 100%;
+    height: 100/@resize;
+    .bgm(#ededed);
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    ul{
+        display: flex;
+        height: 100%;
+        li{
+            width: 25%;
+            text-align: center;
+            a{
+                display: block;
+                font-size: 20/@resize;
+                &:before{
+                    content: '';
+                    display: block;
+                    width: 54/@resize;
+                    height: 68/@resize;
+                    position: relative;
+                    left: 50%;
+                    margin-left: -27/@resize;
+                    .bgi;
+                }
+            }
+            &:nth-of-type(2) a:before{
+                .bgi(url(../images/sprites.png),no-repeat,-130/@resize,-82/@resize);
+            }
+            &:nth-of-type(3) a:before{
+                .bgi(url(../images/sprites.png),no-repeat,-210/@resize,-82/@resize);
+            }
+            &:nth-of-type(4) a:before{
+                .bgi(url(../images/sprites.png),no-repeat,-294/@resize,-82/@resize);
+            }
+        }
+    }
+}
+/*footer end*/

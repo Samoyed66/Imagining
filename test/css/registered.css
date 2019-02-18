@@ -1,0 +1,385 @@
+.flex {
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+/*header change*/
+#header {
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+}
+#header .header-back {
+  margin: 0 0 0.64rem 0.56rem;
+  font-size: 0.4rem;
+  color: #000;
+  text-align: center;
+  position: relative;
+}
+#header .header-back a {
+  display: inline-block;
+  width: 0.26666667rem;
+  height: 0.42666667rem;
+  position: absolute;
+  top: 0.06666667rem;
+  left: 0;
+  background: url(../images/sprites.png) no-repeat -0.73333333rem -0.45333333rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -0.73333333rem -0.45333333rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -0.73333333rem -0.45333333rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -0.73333333rem -0.45333333rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -0.73333333rem -0.45333333rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#header .header-back p {
+  position: absolute;
+  left: 47%;
+  top: 0;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/*header change end*/
+/*login-cont*/
+#box {
+  position: absolute;
+  top: 1.82666667rem;
+  width: 100%;
+  padding: 0.64rem 0.62666667rem 0 0.64rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  z-index: 2;
+}
+#box .login li {
+  height: 1.05333333rem;
+  line-height: 1.05333333rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.33333333rem;
+  position: relative;
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+#box .login li label {
+  color: #808080;
+  display: block;
+  width: 2.24rem;
+}
+#box .login li input {
+  color: #808080;
+  width: 100%;
+  font-size: 0.33333333rem;
+}
+#box .login li input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+#box .login li input::-moz-input-placeholder {
+  /* Firefox 19+ */
+  color: #cccccc;
+}
+#box .login li input:-moz-input-placeholder {
+  /* Firefox 4 to 18 */
+  color: #cccccc;
+}
+#box .login li input:-ms-input-placeholder {
+  color: #cccccc;
+}
+#box .login li i {
+  width: 1rem;
+  margin-right: 0.2rem;
+  background: url(../images/sprites.png) no-repeat -3.01333333rem -0.06666667rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -3.01333333rem -0.06666667rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -3.01333333rem -0.06666667rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -3.01333333rem -0.06666667rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -3.01333333rem -0.06666667rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#box .login li .point {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  width: 4rem;
+  border: 1px solid red;
+  text-align: center;
+  position: absolute;
+  top: -1.33333333rem;
+  left: 4rem;
+  display: none;
+  color: red;
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+  border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+#box .login li .point .tag {
+  width: 0.53333333rem;
+  height: 0.8rem;
+  border-top: transparent;
+  border-left: 1px solid red;
+  border-right: transparent;
+  border-bottom: 1px solid red;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0.4rem;
+  transform: skew(-60deg) rotate(-54deg);
+  -moz-transform: skew(-60deg) rotate(-54deg);
+  -ms-transform: skew(-60deg) rotate(-54deg);
+  -webkit-transform: skew(-60deg) rotate(-54deg);
+  -o-transform: skew(-60deg) rotate(-54deg);
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+}
+#box .login li .point span {
+  position: relative;
+  z-index: 10;
+}
+#box .login li.pwd input {
+  text-indent: 0.22666667rem;
+}
+#box .login li.pwd i {
+  margin: 0;
+  background: url(../images/sprites.png) no-repeat -3.01333333rem -0.06666667rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -3.01333333rem -0.06666667rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -3.01333333rem -0.06666667rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -3.01333333rem -0.06666667rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -3.01333333rem -0.06666667rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#box .login li.pwd i:nth-of-type(2) {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.13333333rem;
+  background: url(../images/sprites.png) no-repeat -3.73333333rem -0.06666667rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -3.73333333rem -0.06666667rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -3.73333333rem -0.06666667rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -3.73333333rem -0.06666667rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -3.73333333rem -0.06666667rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#box .login li.pwd .point {
+  top: 1.6rem;
+}
+#box .login li.pwd .point .tag {
+  width: 0.6rem;
+  border-bottom: transparent;
+  border-right: 1px solid red;
+  border-left: transparent;
+  border-top: 1px solid red;
+  top: -0.44rem;
+  left: 0.6rem;
+  transform: skew(60deg) rotate(-54deg);
+  -moz-transform: skew(60deg) rotate(-54deg);
+  -ms-transform: skew(60deg) rotate(-54deg);
+  -webkit-transform: skew(60deg) rotate(-54deg);
+  -o-transform: skew(60deg) rotate(-54deg);
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+}
+#box .login li.submit {
+  border-bottom: none;
+  height: 1.06666667rem;
+  width: 100%;
+  margin-top: 1.69333333rem;
+  background: #f7c612;
+  -webkit-background: #f7c612;
+  -moz-background: #f7c612;
+  -ms-background: #f7c612;
+  -o-background: #f7c612;
+  border-radius: 0.06666667rem;
+  -moz-border-radius: 0.06666667rem;
+  -webkit-border-radius: 0.06666667rem;
+  -ms-border-radius: 0.06666667rem;
+  -o-border-radius: 0.06666667rem;
+}
+#box .login li.submit input {
+  color: white;
+  font-size: 0.4rem;
+}
+#box .login li.user input {
+  text-indent: 0.13333333rem;
+}
+#box .login li.code input {
+  width: 5.93333333rem;
+}
+#box .login li.code .btn {
+  align-self: center;
+  width: 2.53333333rem;
+  height: 0.73333333rem;
+  line-height: 0.73333333rem;
+  font-size: 0.34666667rem;
+  color: white;
+  text-align: center;
+  background: #cccccc;
+  -webkit-background: #cccccc;
+  -moz-background: #cccccc;
+  -ms-background: #cccccc;
+  -o-background: #cccccc;
+  border-radius: 0.06666667rem;
+  -moz-border-radius: 0.06666667rem;
+  -webkit-border-radius: 0.06666667rem;
+  -ms-border-radius: 0.06666667rem;
+  -o-border-radius: 0.06666667rem;
+}
+#box .login li.num span {
+  font-size: 0.33333333rem;
+}
+/*login-cont end*/
+/*true-box*/
+#true-box {
+  width: 6.66666667rem;
+  height: 4rem;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: 100;
+  border: 0.02666667rem solid #cccccc;
+  transition: .3s;
+  transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+  border-radius: 0.26666667rem;
+  -moz-border-radius: 0.26666667rem;
+  -webkit-border-radius: 0.26666667rem;
+  -ms-border-radius: 0.26666667rem;
+  -o-border-radius: 0.26666667rem;
+  transform: translateX(-50%) translateY(-180%);
+  -moz-transform: translateX(-50%) translateY(-180%);
+  -ms-transform: translateX(-50%) translateY(-180%);
+  -webkit-transform: translateX(-50%) translateY(-180%);
+  -o-transform: translateX(-50%) translateY(-180%);
+}
+#true-box p {
+  line-height: 2.4rem;
+  font-size: 0.53333333rem;
+  font-weight: bold;
+  text-align: center;
+}
+#true-box button {
+  width: 2rem;
+  height: 1.13333333rem;
+  vertical-align: top;
+  font-size: 0.53333333rem;
+  color: white;
+  position: relative;
+  left: 50%;
+  transform: translateX(-55%);
+  -moz-transform: translateX(-55%);
+  -ms-transform: translateX(-55%);
+  -webkit-transform: translateX(-55%);
+  -o-transform: translateX(-55%);
+  background: #0072ff;
+  -webkit-background: #0072ff;
+  -moz-background: #0072ff;
+  -ms-background: #0072ff;
+  -o-background: #0072ff;
+  border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+/*true-box end*/
+/*mark*/
+#mark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-background: rgba(0, 0, 0, 0.5);
+  -moz-background: rgba(0, 0, 0, 0.5);
+  -ms-background: rgba(0, 0, 0, 0.5);
+  -o-background: rgba(0, 0, 0, 0.5);
+}
+#mark .success {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 7.33333333rem;
+  height: 4.66666667rem;
+  transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  border-radius: 0.66666667rem;
+  -moz-border-radius: 0.66666667rem;
+  -webkit-border-radius: 0.66666667rem;
+  -ms-border-radius: 0.66666667rem;
+  -o-border-radius: 0.66666667rem;
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+}
+#mark .success p {
+  text-align: center;
+  font-weight: bold;
+}
+#mark .success p:first-child {
+  line-height: 2.66666667rem;
+  font-size: 0.58666667rem;
+}
+#mark .success p:last-child {
+  font-size: 0.42666667rem;
+}
+#mark .success p:last-child span {
+  color: red;
+  padding-right: 0.13333333rem;
+}
+/*mark end*/

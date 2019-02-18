@@ -1,0 +1,124 @@
+{
+	"status": 0,
+	"data":[
+				{
+					"list":[
+						{
+							"msrc": "images/information/information-list01.jpg", 
+							"title": "【宿古北之光】古北水镇2日1晚跟团游古北水镇2日1晚跟团游",
+							"cont": "5星古北之光温泉酒店住宿",
+							"time": "排期: 每周四、五、六、日",
+							"price": "2699",
+							"num": "256人",
+							"comment": "69条"
+						},
+						{
+							"msrc": "images/information/information-list02.jpg", 
+							"title": "【游圣诞小镇】密云1日自由行·南山密云1日自由行",
+							"cont": "独揽“全球不容错过的25处风景之首”",
+							"time": "排期: 每周三、四、五、六、日",
+							"price": "1099",
+							"num": "203人",
+							"comment": "38条"
+						},
+						{
+							"msrc": "images/information/information-list03.jpg", 
+							"title": "北京1日自由行·八达岭长城+十三陵定日自由行·八达岭长城+十三陵定",
+							"cont": "带你领略京都之美",
+							"time": "排期: 每周六、日",
+							"price": "159",
+							"num": "390人",
+							"comment": "90条"
+						},
+						{
+							"msrc": "images/information/information-list04.jpg", 
+							"title": "怀柔2日自由行(4钻)【每人减100元】怀柔2日自由行(4钻)【每人减100元】",
+							"cont": "限时特惠，预定即享每人减100元",
+							"time": "排期: 每周五、六、日",
+							"price": "269",
+							"num": "220人",
+							"comment": "65条"
+						},
+						{
+							"msrc": "images/information/information-list05.jpg", 
+							"title": "北京5日4晚跟团游·一价全含·无自费北京5日4晚跟团游·一价全含·无自费",
+							"cont": "深度全面的浏览世界文化遗产",
+							"time": "排期: 每周四、五、六、日",
+							"price": "2099",
+							"num": "189人",
+							"comment": "56条"
+						}
+					]
+				},
+				{
+					"list":[
+						{
+							"msrc": "images/information/information-list01.jpg", 
+							"title": "【宿古北之光】古北水镇2日1晚跟团游古北水镇2日1晚跟团游",
+							"cont": "5星古北之光温泉酒店住宿",
+							"time": "排期: 每周四、五、六、日",
+							"price": "2699",
+							"num": "256人",
+							"comment": "69条"
+						},
+						{
+							"msrc": "images/information/information-list02.jpg", 
+							"title": "【游圣诞小镇】密云1日自由行·南山密云1日自由行",
+							"cont": "独揽“全球不容错过的25处风景之首”",
+							"time": "排期: 每周三、四、五、六、日",
+							"price": "1099",
+							"num": "203人",
+							"comment": "38条"
+						}
+					]
+				},
+				{
+					"list":[
+						{
+							"msrc": "images/information/information-list03.jpg", 
+							"title": "北京1日自由行·八达岭长城+十三陵定日自由行·八达岭长城+十三陵定",
+							"cont": "带你领略京都之美",
+							"time": "排期: 每周六、日",
+							"price": "159",
+							"num": "390人",
+							"comment": "90条"
+						}
+					]
+				},
+				{
+					"list":[
+						{
+							"msrc": "images/information/information-list01.jpg", 
+							"title": "【宿古北之光】古北水镇2日1晚跟团游古北水镇2日1晚跟团游",
+							"cont": "5星古北之光温泉酒店住宿",
+							"time": "排期: 每周四、五、六、日",
+							"price": "2699",
+							"num": "256人",
+							"comment": "69条"
+						},
+						{
+							"msrc": "images/information/information-list02.jpg", 
+							"title": "【游圣诞小镇】密云1日自由行·南山密云1日自由行",
+							"cont": "独揽“全球不容错过的25处风景之首”",
+							"time": "排期: 每周三、四、五、六、日",
+							"price": "1099",
+							"num": "203人",
+							"comment": "38条"
+						}
+					]
+				},
+				{
+					"list":[
+						{
+							"msrc": "images/information/information-list03.jpg", 
+							"title": "北京1日自由行·八达岭长城+十三陵定日自由行·八达岭长城+十三陵定",
+							"cont": "带你领略京都之美",
+							"time": "排期: 每周六、日",
+							"price": "159",
+							"num": "390人",
+							"comment": "90条"
+						}
+					]
+				}
+			]
+}

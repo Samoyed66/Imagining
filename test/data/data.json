@@ -1,0 +1,35 @@
+{
+	"status": 0,
+	"data":[
+		{
+			"msrc": "images/index/index-cont1.jpg", 
+			"title": "台湾环岛8日7晚跟团游。甩尾狂甩3人行1人免单台湾环岛8日7晚跟团游。甩尾狂甩3人行1人免单", 
+			"price": "1999"
+		},
+		{
+			"msrc": "images/index/index-cont2.jpg", 
+			"title": "巴厘岛7日5晚自由行。五星豪庭，三星价格3月特巴厘岛7日5晚自由行。五星豪庭，三星价格3月特", 
+			"price": "2989"
+		},
+		{
+			"msrc": "images/index/index-cont3.jpg", 
+			"title": "韩国首尔5日4晚跟团游。暑假预售商圈五花，好韩国首尔5日4晚跟团游。暑假预售商圈五花，好", 
+			"price": "1699"
+		},
+		{
+			"msrc": "images/index/index-cont4.jpg", 
+			"title": "马尔代夫6日自由行·6日4晚。全球顶级海岛蜜月马尔代夫6日自由行·6日4晚。全球顶级海岛蜜月", 
+			"price": "3099"
+		},
+		{
+			"msrc": "images/index/index-cont5.jpg", 
+			"title": "香港5日自由行·仅含往返机票。星光大道+天星小香港5日自由行·仅含往返机票。星光大道+天星小", 
+			"price": "1888"
+		},
+		{
+			"msrc": "images/index/index-cont6.jpg", 
+			"title": "新加坡5日4晚自由行。错峰周末游，特赠送价值新加坡5日4晚自由行。错峰周末游，特赠送价值", 
+			"price": "2689"
+		}
+	]
+}

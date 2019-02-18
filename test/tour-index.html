@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<title></title>
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <!-- 忽略页面中的数字识别为电话号码,email识别 -->
+	    <meta name="format-detection" content="telephone=no, email=no" />
+	    <!-- 启用360浏览器的极速模式(webkit) -->
+	    <meta name="renderer" content="webkit">
+	    <!-- 避免IE使用兼容模式 -->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	    <meta name="HandheldFriendly" content="true">
+	    <!-- 微软的老式浏览器 -->
+	    <meta name="MobileOptimized" content="320">
+	    <!-- uc强制竖屏 -->
+	    <meta name="screen-orientation" content="portrait">
+	    <!-- QQ强制竖屏 -->
+	    <meta name="x5-orientation" content="portrait">
+	    <!-- UC强制全屏 -->
+	    <meta name="full-screen" content="yes">
+	    <!-- QQ强制全屏 -->
+	    <meta name="x5-fullscreen" content="true">
+	    <!-- UC应用模式 -->
+	    <meta name="browsermode" content="application">
+	    <!-- QQ应用模式 -->
+	    <meta name="x5-page-mode" content="app">
+		<link rel="stylesheet" type="text/css" href="lib/css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/rest.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tour-index.css"/>
+		<script type="text/javascript" src="lib/js/rem.js"></script>
+	</head>
+	<body>
+		<!--jsonp-->
+		<ul id="dark"></ul>
+		<!--城市列表页-->
+		<div id="city-wrap">
+			<!--显示点击的是哪一个字母-->
+			<div id="showLetter" class="showLetter"><span>A</span></div>
+			<!--城市索引查询-->
+			<div class="letter">
+			    <ul>
+			      <li><a href="javascript:;">热门</a></li>
+			      <li><a href="javascript:;">历史</a></li>
+			      <li><a href="javascript:;">A</a></li>
+			      <li><a href="javascript:;">B</a></li>
+			      <li><a href="javascript:;">C</a></li>
+			      <li><a href="javascript:;">D</a></li>
+			      <li><a href="javascript:;">E</a></li>
+			      <li><a href="javascript:;">F</a></li>
+			      <li><a href="javascript:;">G</a></li>
+			      <li><a href="javascript:;">H</a></li>
+			      <li><a href="javascript:;">J</a></li>
+			      <li><a href="javascript:;">K</a></li>
+			      <li><a href="javascript:;">L</a></li>
+			      <li><a href="javascript:;">M</a></li>
+			      <li><a href="javascript:;">N</a></li>
+			      <li><a href="javascript:;">P</a></li>
+			      <li><a href="javascript:;">Q</a></li>
+			      <li><a href="javascript:;">R</a></li>
+			      <li><a href="javascript:;">S</a></li>
+			      <li><a href="javascript:;">T</a></li>
+			      <li><a href="javascript:;">W</a></li>
+			      <li><a href="javascript:;">X</a></li>
+			      <li><a href="javascript:;">Y</a></li>
+			      <li><a href="javascript:;">Z</a></li>
+			    </ul>
+			  </div>
+			<!--城市列表-->
+			<div class="container">
+			  <div class="city"></div>
+			</div>
+		</div>
+		<!--map-->
+		<div id="allmap"></div>
+		<!--header-->
+		<header id="header">
+			<div class="header-top">
+				<p>中国移动  3G</p>
+				<p>
+					<span>&#xe6f2;</span>
+					<span class="fa fa-signal"></span>
+					<span class="fa fa-battery-2"></span>
+					16:25
+				</p>
+			</div>
+			<div class="tour-head">
+				<a href="index.html" class="back"></a>
+				<div class="tour-des">北京</div>
+				<div class="tour-search">
+					<input type="search" placeholder="目的地/关键字"/>
+				</div>
+			</div>
+		</header>
+		<!--header end-->
+		<section id="box">
+			<!--swiper banner-->
+			<div class="banner swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/tour/banner01.jpg"/>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/tour/banner02.jpg"/>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/tour/banner03.jpg"/>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/tour/banner04.jpg"/>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--swiper banner end-->
+			<!--list-icon-->
+			<ul class="list-icon">
+				<li>
+					<a href="tour-list.html">出境游</a>
+				</li>
+				<li>
+					<a href="tour-list.html">国内游</a>
+				</li>
+				<li>
+					<a href="tour-list.html">周边游</a>
+				</li>
+				<li>
+					<a href="tour-list.html">当地游</a>
+				</li>
+			</ul>
+			<!--list-icon end-->
+			<!--tour-rec-->
+			<div class="tour-rec">
+				<a href="tour-list.html" class="wow zoomIn" data-wow-duration=".5s">
+					<i></i>
+					<img src="images/tour/show01.jpg"/>
+				</a>
+				<a href="tour-list.html" class="wow zoomIn" data-wow-duration=".5s" data-wow-delay=".5s">
+					<i></i>
+					<img src="images/tour/show02.jpg"/>
+				</a>
+				<a href="tour-list.html" class="wow zoomIn" data-wow-duration=".5s" data-wow-delay="1s">
+					<i></i>
+					<img src="images/tour/show03.jpg"/>
+				</a>
+				<a href="tour-list.html" class="wow zoomIn" data-wow-duration=".5s" data-wow-delay="1.5s">
+					<i></i>
+					<img src="images/tour/show04.jpg"/>
+				</a>
+			</div>
+			<!--tour-rec end-->
+			<!--tour-list-->
+			<div class="tour-list">
+				<h4>
+					出境游
+					<img src="images/tour/icon03.png"/>
+				</h4>
+				<ul class="clear"></ul>
+			</div>
+			<!--tour-list end-->
+		</section>
+		<!--footer-->
+		<footer id="footer">
+			<ul>
+				<li>
+					<a href="tour-index.html">旅游首页</a>
+				</li>
+				<li>
+					<a href="destination.html">目 的 地</a>
+				</li>
+				<li>
+					<a href="history.html">浏 览 历 史</a>
+				</li>
+				<li>
+					<a href="preson.html">个 人</a>
+				</li>
+			</ul>
+		</footer>
+		<!--footer end-->
+		<div id="back">
+			<p class="fa fa-arrow-up"></p>
+			<p>置顶</p>
+		</div>
+		<!--百度模板-->
+		<script type="text/html" id="tourList">
+			<%for (var l = 0; l<menulist.length; l++){%>
+				<li>
+					<a href="tour-details.html">
+						<img src=<%=menulist[l].msrc%>/>
+					</a>
+					<h4><%=menulist[l].title%></h4>
+					<p>
+						<span>席位充足</span>
+						<span><i>¥</i><%=menulist[l].price%></span>起
+					</p>
+				</li>
+			<%}%>
+		</script>
+		<!--百度模板 end-->
+		<script type="text/javascript" src="lib/js/clamp.min.js"></script>
+		<script type="text/javascript" src="lib/js/baiduTemplate.js"></script>
+		<script type="text/javascript" src="lib/js/iscroll4.js"></script>
+		<script type="text/javascript" src="lib/js/zapot.min.js"></script>
+		<script type="text/javascript" src="lib/js/selector.js"></script>
+		<script type="text/javascript" src="lib/js/touch.js"></script>
+		<script type="text/javascript" src="lib/js/fx.js"></script>
+		<script type="text/javascript" src="lib/js/fx_methods.js"></script>
+		<script type="text/javascript" src="lib/js/swiper.min.js"></script>
+		<script type="text/javascript" src="lib/js/wow.min.js"></script>
+		<script type="text/javascript" src="lib/js/city.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=25E5L0zcrz3RxFESCGNx2HjYgkmeRPg2"></script>
+		<script type="text/javascript" src="js/tour-index.js"></script>
+	</body>
+</html>

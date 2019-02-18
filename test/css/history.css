@@ -1,0 +1,320 @@
+.flex {
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+/*header change*/
+#header {
+  background: #14ae26;
+  -webkit-background: #14ae26;
+  -moz-background: #14ae26;
+  -ms-background: #14ae26;
+  -o-background: #14ae26;
+}
+#header .header-back {
+  margin: 0 0 0.64rem 0.56rem;
+  font-size: 0.4rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+#header .header-back a:first-child {
+  display: inline-block;
+  width: 0.26666667rem;
+  height: 0.42666667rem;
+  position: absolute;
+  top: 0.06666667rem;
+  left: 0;
+  background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#header .header-back a:last-child {
+  color: white;
+  font-size: 0.32rem;
+  float: right;
+  padding-right: 0.52rem;
+}
+#header .header-back p {
+  position: absolute;
+  left: 47%;
+  top: 0;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/*header change end*/
+/*box*/
+#box {
+  padding: 0.12rem 0.32rem 0;
+  position: absolute;
+  top: 1.82666667rem;
+  bottom: 1.33333333rem;
+}
+#box .cont-list > h4 {
+  color: #656565;
+  font-size: 0.34666667rem;
+  height: 0.45333333rem;
+  line-height: 0.45333333rem;
+  font-weight: normal;
+}
+#box .cont-list ul li {
+  position: relative;
+  margin-bottom: 0.28rem;
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+#box .cont-list ul li .con-wrap {
+  width: 7.73333333rem;
+  height: 1.46666667rem;
+  padding: 0.34666667rem 0.36rem 0.32rem 0.22666667rem;
+  justify-content: space-between;
+  margin-left: 1.04rem;
+  position: relative;
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+  background: #f4f4f4;
+  -webkit-background: #f4f4f4;
+  -moz-background: #f4f4f4;
+  -ms-background: #f4f4f4;
+  -o-background: #f4f4f4;
+  border-radius: 0.10666667rem;
+  -moz-border-radius: 0.10666667rem;
+  -webkit-border-radius: 0.10666667rem;
+  -ms-border-radius: 0.10666667rem;
+  -o-border-radius: 0.10666667rem;
+}
+#box .cont-list ul li .con-wrap .list-right img {
+  width: 1.77333333rem;
+  height: 1.46666667rem;
+  border-radius: 0.06666667rem;
+  -moz-border-radius: 0.06666667rem;
+  -webkit-border-radius: 0.06666667rem;
+  -ms-border-radius: 0.06666667rem;
+  -o-border-radius: 0.06666667rem;
+}
+#box .cont-list ul li .con-wrap .list-left {
+  width: 5.70666667rem;
+}
+#box .cont-list ul li .con-wrap .list-left h4 {
+  height: 0.96rem;
+  line-height: 0.46666667rem;
+  margin-bottom: 0.21333333rem;
+}
+#box .cont-list ul li .con-wrap .list-left h4 a {
+  font-weight: normal;
+  font-size: 0.37333333rem;
+  color: #656565;
+  display: block;
+}
+#box .cont-list ul li .con-wrap .list-left p {
+  font-size: 0.24rem;
+  color: #989898;
+}
+#box .cont-list ul li .con-wrap .list-left p span {
+  font-size: 0.29333333rem;
+  color: #f68211;
+}
+#box .cont-list ul li .con-wrap .icon-s {
+  width: 0;
+  border-top: 0.24rem solid transparent;
+  border-bottom: 0.24rem solid transparent;
+  border-left: 0.24rem solid transparent;
+  border-right: 0.24rem solid #f4f4f4;
+  position: absolute;
+  top: 0.26666667rem;
+  left: -0.45333333rem;
+}
+#box .cont-list ul li .del {
+  width: 1.33333333rem;
+  font-size: 0.53333333rem;
+  text-align: center;
+  padding: 0 0.66666667rem;
+  color: white;
+  line-height: 2rem;
+  margin-left: 0.66666667rem;
+  border-radius: 0.24rem;
+  -moz-border-radius: 0.24rem;
+  -webkit-border-radius: 0.24rem;
+  -ms-border-radius: 0.24rem;
+  -o-border-radius: 0.24rem;
+  background: #ff0000;
+  -webkit-background: #ff0000;
+  -moz-background: #ff0000;
+  -ms-background: #ff0000;
+  -o-background: #ff0000;
+}
+#box .cont-list ul li .icon-line {
+  width: 0.02666667rem;
+  height: 1.81333333rem;
+  position: absolute;
+  top: 0.73333333rem;
+  left: 0.32rem;
+  background: #cdccca;
+  -webkit-background: #cdccca;
+  -moz-background: #cdccca;
+  -ms-background: #cdccca;
+  -o-background: #cdccca;
+}
+#box .cont-list ul li:before {
+  display: inline-block;
+  content: '';
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+  top: 0.13333333rem;
+  left: 0.06666667rem;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: url(../images/sprites.png) no-repeat -9.05333333rem -3.4rem #1adb50;
+  -webkit-background: url(../images/sprites.png) no-repeat -9.05333333rem -3.4rem #1adb50;
+  -moz-background: url(../images/sprites.png) no-repeat -9.05333333rem -3.4rem #1adb50;
+  -ms-background: url(../images/sprites.png) no-repeat -9.05333333rem -3.4rem #1adb50;
+  -o-background: url(../images/sprites.png) no-repeat -9.05333333rem -3.4rem #1adb50;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#box .cont-list ul li:last-child {
+  margin-bottom: 0;
+}
+#box #clear {
+  width: 100%;
+  color: #797979;
+  font-size: 0.85333333rem;
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+  top: 40%;
+  left: 0;
+  display: none;
+}
+/*box* end/
+/*footer*/
+#footer ul li:nth-of-type(1) a:before {
+  background-position-y: -1.09333333rem;
+  -ms-background-position-y: -1.09333333rem;
+}
+#footer ul li:nth-of-type(3) a:before {
+  background-position-y: -2.09333333rem;
+  -ms-background-position-y: -2.09333333rem;
+}
+/*footer end*/
+/*true-box*/
+#true-box {
+  width: 7.33333333rem;
+  height: 4rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: 0.02666667rem solid #cccccc;
+  display: none;
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+  transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  border-radius: 0.26666667rem;
+  -moz-border-radius: 0.26666667rem;
+  -webkit-border-radius: 0.26666667rem;
+  -ms-border-radius: 0.26666667rem;
+  -o-border-radius: 0.26666667rem;
+}
+#true-box p {
+  font-weight: bold;
+  font-size: 0.53333333rem;
+  text-align: center;
+  line-height: 2.4rem;
+  border-bottom: 0.02666667rem solid #cccccc;
+}
+#true-box div {
+  height: 1.62666667rem;
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+#true-box div div {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+  justify-content: center;
+  align-items: center;
+}
+#true-box div div button {
+  text-align: center;
+  width: 180px;
+  height: 80px;
+  font-size: 0.53333333rem;
+  color: white;
+  border-radius: 0.26666667rem;
+  -moz-border-radius: 0.26666667rem;
+  -webkit-border-radius: 0.26666667rem;
+  -ms-border-radius: 0.26666667rem;
+  -o-border-radius: 0.26666667rem;
+}
+#true-box div div:first-child button {
+  background: #ff0000;
+  -webkit-background: #ff0000;
+  -moz-background: #ff0000;
+  -ms-background: #ff0000;
+  -o-background: #ff0000;
+}
+/*true-box end*/

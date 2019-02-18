@@ -1,0 +1,728 @@
+.flex {
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+.boxs {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #f4f4f4;
+  -webkit-background: #f4f4f4;
+  -moz-background: #f4f4f4;
+  -ms-background: #f4f4f4;
+  -o-background: #f4f4f4;
+}
+/*header change*/
+#header .header-back {
+  margin: 0 0 0.64rem 0.56rem;
+  font-size: 0.4rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+#header .header-back a:first-child {
+  display: inline-block;
+  width: 0.26666667rem;
+  height: 0.42666667rem;
+  position: absolute;
+  top: 0.06666667rem;
+  left: 0;
+  background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -1.38666667rem -0.46666667rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#header .header-back a:last-child {
+  color: white;
+  font-size: 0.32rem;
+  float: right;
+  padding-right: 0.52rem;
+}
+#header .header-back a:last-child:before {
+  content: '';
+  display: inline-block;
+  width: 0.45333333rem;
+  height: 0.42666667rem;
+  margin-right: 0.32rem;
+  background: url(../images/sprites.png) no-repeat -6.12rem -8.37333333rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -6.12rem -8.37333333rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -6.12rem -8.37333333rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -6.12rem -8.37333333rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -6.12rem -8.37333333rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#header .header-back p {
+  position: absolute;
+  left: 47%;
+  top: 0;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/*header change end*/
+/*details*/
+#details {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 1.33333333rem;
+}
+#details .details-pic {
+  position: relative;
+}
+#details .details-pic img {
+  width: 10rem;
+  height: 7.04rem;
+}
+#details .details-pic p {
+  width: 100%;
+  height: 0.53333333rem;
+  line-height: 0.53333333rem;
+  font-size: 0.37333333rem;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0.53333333rem;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-background: rgba(0, 0, 0, 0.3);
+  -moz-background: rgba(0, 0, 0, 0.3);
+  -ms-background: rgba(0, 0, 0, 0.3);
+  -o-background: rgba(0, 0, 0, 0.3);
+}
+#details .details-pic p span {
+  float: right;
+}
+#details .details-title {
+  height: 2.53333333rem;
+  border-bottom: 1px solid #cccbc6;
+  padding: 0.36rem 0.53333333rem 0.37333333rem;
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+}
+#details .details-title h4 {
+  font-size: 0.42666667rem;
+  line-height: 0.53333333rem;
+  color: #202020;
+}
+#details .details-title #star2 {
+  padding: 0.22666667rem 0px;
+}
+#details .details-title #star2 > div {
+  margin-right: 0.06666667rem;
+}
+#details .details-title #star2 > div:before {
+  font-size: 0.37333333rem;
+}
+#details .details-title div {
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+  height: 0.50666667rem;
+}
+#details .details-title div p {
+  color: #999;
+}
+#details .details-title div p:nth-of-type(1) {
+  line-height: 0.50666667rem;
+  font-size: 0.21333333rem;
+  padding-right: 0.72rem;
+}
+#details .details-title div p:nth-of-type(1) span {
+  color: #f14c1c;
+  font-size: 0.46666667rem;
+}
+#details .details-title div p:nth-of-type(1) span i {
+  display: inline-block;
+  font-size: 0.16rem;
+  vertical-align: middle;
+}
+#details .details-title div p:nth-of-type(2) {
+  font-size: 0.32rem;
+}
+#details .details-title div p:nth-of-type(2) span {
+  padding: 0.06666667rem 0.13333333rem;
+  border: 1px solid #bebebe;
+  margin-right: 0.25333333rem;
+  background: #efefef;
+  -webkit-background: #efefef;
+  -moz-background: #efefef;
+  -ms-background: #efefef;
+  -o-background: #efefef;
+}
+#details .details-offer {
+  width: 7.06666667rem;
+  height: 1.73333333rem;
+  padding: 0.38666667rem 1.46666667rem;
+  font-size: 0.29333333rem;
+  border-bottom: 1px solid #cccbc6;
+  color: #7b726b;
+  margin-bottom: 0.24rem;
+  background: #fdeacc;
+  -webkit-background: #fdeacc;
+  -moz-background: #fdeacc;
+  -ms-background: #fdeacc;
+  -o-background: #fdeacc;
+}
+#details .details-offer li {
+  height: 0.42666667rem;
+  line-height: 0.42666667rem;
+  list-style-type: disc;
+  position: relative;
+}
+#details .details-offer li:nth-of-type(1):before {
+  content: '立减';
+  position: absolute;
+  left: -1.17333333rem;
+  top: 0.13333333rem;
+  color: #a86052;
+  padding: 0 0.04rem;
+  border: 1px solid #a86052;
+  border-radius: 0.05333333rem;
+  -moz-border-radius: 0.05333333rem;
+  -webkit-border-radius: 0.05333333rem;
+  -ms-border-radius: 0.05333333rem;
+  -o-border-radius: 0.05333333rem;
+}
+#details .details-offer li:nth-of-type(2) {
+  padding-bottom: 0.16rem;
+}
+#details .details-offer li:nth-of-type(2):after {
+  content: '';
+  display: block;
+  width: 0.18666667rem;
+  height: 0.36rem;
+  position: absolute;
+  right: -0.8rem;
+  background: url(../images/details/icon.png) no-repeat;
+  -webkit-background: url(../images/details/icon.png) no-repeat;
+  -moz-background: url(../images/details/icon.png) no-repeat;
+  -ms-background: url(../images/details/icon.png) no-repeat;
+  -o-background: url(../images/details/icon.png) no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+}
+#details .details-offer li:nth-of-type(3):before {
+  content: '优惠';
+  position: absolute;
+  left: -1.17333333rem;
+  top: 0.13333333rem;
+  color: #fdeacc;
+  padding: 0 0.04rem;
+  border-radius: 0.05333333rem;
+  -moz-border-radius: 0.05333333rem;
+  -webkit-border-radius: 0.05333333rem;
+  -ms-border-radius: 0.05333333rem;
+  -o-border-radius: 0.05333333rem;
+  background: #ec4e4b;
+  -webkit-background: #ec4e4b;
+  -moz-background: #ec4e4b;
+  -ms-background: #ec4e4b;
+  -o-background: #ec4e4b;
+}
+#details .details-review {
+  padding: 0.41333333rem 0.50666667rem 0.49333333rem;
+  border-top: 1px solid #cccbc6;
+  border-bottom: 1px solid #cccbc6;
+  margin-bottom: 0.24rem;
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+}
+#details .details-review .review-title {
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+  height: 0.56rem;
+  line-height: 0.56rem;
+}
+#details .details-review .review-title p {
+  font-size: 0.37333333rem;
+  color: #626262;
+}
+#details .details-review .review-title p span {
+  color: #f14709;
+}
+#details .details-review .review-title p:nth-of-type(1) {
+  padding-right: 0.24rem;
+  border-right: 1px solid #cbcbcb;
+}
+#details .details-review .review-title p:nth-of-type(2) {
+  padding-left: 0.29333333rem;
+}
+#details .details-review ul {
+  margin-bottom: 0.2rem;
+}
+#details .details-review ul li {
+  float: left;
+  font-size: 0.29333333rem;
+  color: #616161;
+  margin: 0.2rem 0.26666667rem 0.05333333rem 0.17333333rem;
+  padding: 0.06666667rem 0.05333333rem 0.06666667rem 0.10666667rem;
+  background: #eaeaea;
+  -webkit-background: #eaeaea;
+  -moz-background: #eaeaea;
+  -ms-background: #eaeaea;
+  -o-background: #eaeaea;
+  border-radius: 0.04rem;
+  -moz-border-radius: 0.04rem;
+  -webkit-border-radius: 0.04rem;
+  -ms-border-radius: 0.04rem;
+  -o-border-radius: 0.04rem;
+}
+#details .details-review .review-list {
+  transition: .5s;
+  height: 2.24rem;
+  margin-bottom: 0.18666667rem;
+  overflow: hidden;
+}
+#details .details-review .review-list .review-cont {
+  padding: 0.18666667rem 0;
+  border-top: 1px solid #ccc;
+}
+#details .details-review .review-list .review-cont p {
+  font-size: 0.34666667rem;
+  color: #676767;
+  line-height: 0.4rem;
+}
+#details .details-review .review-list .review-cont p:nth-of-type(1) {
+  height: 0.65333333rem;
+  line-height: 0.65333333rem;
+}
+#details .details-review .review-list .review-cont p:nth-of-type(1) span {
+  float: right;
+}
+#details .details-review .all-btn {
+  font-size: 0.33333333rem;
+  color: #1adb50;
+  height: 0.77333333rem;
+  line-height: 0.77333333rem;
+  width: 3.70666667rem;
+  text-align: center;
+  border: 1px solid #1adb50;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  -webkit-border-radius: 0.08rem;
+  -ms-border-radius: 0.08rem;
+  -o-border-radius: 0.08rem;
+}
+#details .details-content {
+  border-top: 1px solid #ccc;
+  padding-bottom: 1.33333333rem;
+  background: #ffffff;
+  -webkit-background: #ffffff;
+  -moz-background: #ffffff;
+  -ms-background: #ffffff;
+  -o-background: #ffffff;
+}
+#details .details-content > ul {
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+#details .details-content > ul li {
+  width: 33.333%;
+  height: 1.41333333rem;
+  line-height: 1.41333333rem;
+  font-size: 0.37333333rem;
+  color: #646464;
+  text-align: center;
+  font-weight: bold;
+}
+#details .details-content > ul li.active {
+  color: #1adb50;
+  border-bottom: 8px solid #f6c813;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#details .details-content .content-list {
+  width: 100%;
+  overflow: hidden;
+}
+#details .details-content .content-list .content-all {
+  width: 301%;
+  position: relative;
+  left: 0;
+}
+#details .details-content .content-list .content-all > div {
+  float: left;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(1) {
+  width: 10rem;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(1) img {
+  width: 10rem;
+  height: 4.53333333rem;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) {
+  width: 8.86666667rem;
+  position: relative;
+  padding: 0.66666667rem 0 0 1.13333333rem;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) .day {
+  width: 1.01333333rem;
+  height: 0.46666667rem;
+  line-height: 0.46666667rem;
+  font-size: 0.21333333rem;
+  color: white;
+  text-indent: 0.05333333rem;
+  position: absolute;
+  top: 0.73333333rem;
+  left: 0;
+  background: url(../images/sprites.png) no-repeat -3.34666667rem -5.54666667rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -3.34666667rem -5.54666667rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -3.34666667rem -5.54666667rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -3.34666667rem -5.54666667rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -3.34666667rem -5.54666667rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) ul {
+  border-left: 1px dotted #2b8db0;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) ul li {
+  height: 0.72rem;
+  line-height: 0.72rem;
+  font-size: 0.29333333rem;
+  color: #636363;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) ul li:before {
+  content: '';
+  display: inline-block;
+  width: 0.16rem;
+  height: 0.16rem;
+  margin: 0 0.24rem 0 -0.08rem;
+  background: #2e91b1;
+  -webkit-background: #2e91b1;
+  -moz-background: #2e91b1;
+  -ms-background: #2e91b1;
+  -o-background: #2e91b1;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) ul li div {
+  width: 6.66666667rem;
+  padding-left: 1.09333333rem;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) ul li div img {
+  float: left;
+  width: 3.06666667rem;
+  height: 2.66666667rem;
+  margin: 0 0.16rem 0.18666667rem 0;
+  border: 1px solid #999;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) ul li span {
+  padding: 0.01333333rem 0.04rem 0 0.04rem;
+  border: 1px solid #ccc;
+  margin-left: 0.29333333rem;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) ul li:nth-of-type(3),
+#details .details-content .content-list .content-all > div:nth-of-type(2) ul li:nth-of-type(5) {
+  height: 6.49333333rem;
+  margin: 0.08rem 0 0.16rem 0;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) ul li:nth-of-type(6) {
+  height: 3.8rem;
+  margin: 0.08rem 0 0.16rem 0;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) ul li.mark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-background: rgba(0, 0, 0, 0.5);
+  -moz-background: rgba(0, 0, 0, 0.5);
+  -ms-background: rgba(0, 0, 0, 0.5);
+  -o-background: rgba(0, 0, 0, 0.5);
+}
+#details .details-content .content-list .content-all > div:nth-of-type(2) ul li.mark img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 0.08rem;
+  -moz-border-radius: 0.08rem;
+  -webkit-border-radius: 0.08rem;
+  -ms-border-radius: 0.08rem;
+  -o-border-radius: 0.08rem;
+  transform: translateX(-50%) translateY(-50%) scale(2.5);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(2.5);
+  -ms-transform: translateX(-50%) translateY(-50%) scale(2.5);
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(2.5);
+  -o-transform: translateX(-50%) translateY(-50%) scale(2.5);
+  transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(3) {
+  position: relative;
+  width: 8.08rem;
+  padding: 0.68rem 0.98666667rem 0.53333333rem 0.96rem;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(3) .clock {
+  width: 0.53333333rem;
+  height: 0.58666667rem;
+  position: absolute;
+  top: 0.72rem;
+  left: 0.21333333rem;
+  background: url(../images/sprites.png) no-repeat -4.81333333rem -5.50666667rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -4.81333333rem -5.50666667rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -4.81333333rem -5.50666667rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -4.81333333rem -5.50666667rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -4.81333333rem -5.50666667rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(3) p {
+  line-height: 0.45333333rem;
+  font-size: 0.34666667rem;
+  color: #292929;
+  padding-bottom: 0.08rem;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(3) dl {
+  padding-bottom: 0.04rem;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(3) dl dt {
+  font-size: 0.37333333rem;
+  height: 1.02666667rem;
+  line-height: 1.02666667rem;
+  color: #1adb50;
+}
+#details .details-content .content-list .content-all > div:nth-of-type(3) dl dd {
+  line-height: 0.46666667rem;
+  font-size: 0.33333333rem;
+  color: #292929;
+}
+/*details end*/
+/*new-footer*/
+#footer {
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+  line-height: 1.33333333rem;
+}
+#footer .footer-left {
+  flex: 8;
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+}
+#footer .footer-left i {
+  width: 35%;
+  border-right: 2px solid #dcdcdc;
+  background: url(../images/sprites.png) no-repeat -5.46666667rem -4.09333333rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -5.46666667rem -4.09333333rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -5.46666667rem -4.09333333rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -5.46666667rem -4.09333333rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -5.46666667rem -4.09333333rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#footer .footer-left i:nth-of-type(2) {
+  width: 27%;
+  background: url(../images/sprites.png) no-repeat -6.89333333rem -4.05333333rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -6.89333333rem -4.05333333rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -6.89333333rem -4.05333333rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -6.89333333rem -4.05333333rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -6.89333333rem -4.05333333rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#footer .footer-left i:nth-of-type(3) {
+  width: 38%;
+  background: url(../images/sprites.png) no-repeat -7.94666667rem -4.04rem transparent;
+  -webkit-background: url(../images/sprites.png) no-repeat -7.94666667rem -4.04rem transparent;
+  -moz-background: url(../images/sprites.png) no-repeat -7.94666667rem -4.04rem transparent;
+  -ms-background: url(../images/sprites.png) no-repeat -7.94666667rem -4.04rem transparent;
+  -o-background: url(../images/sprites.png) no-repeat -7.94666667rem -4.04rem transparent;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#footer a {
+  display: block;
+  flex: 7;
+  font-size: 0.46666667rem;
+  color: white;
+  text-align: center;
+  background: #f2a410;
+  -webkit-background: #f2a410;
+  -moz-background: #f2a410;
+  -ms-background: #f2a410;
+  -o-background: #f2a410;
+}
+/*new-footer end*/
+@keyframes hui-a-down {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+#hui-mask {
+  position: fixed;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  left: 0rem;
+  top: 0rem;
+  height: 100%;
+}
+#hui-action-sheet {
+  width: 90%;
+  position: fixed;
+  z-index: 21;
+  left: 5%;
+  bottom: 0.13333333rem;
+  background: #FFFFFF;
+  animation: hui-a-down 0.2s linear;
+  -webkit-animation: hui-a-down 0.2s linear;
+  -moz-animation: hui-a-down 0.2s linear;
+  -o-animation: hui-a-down 0.2s linear;
+  border-radius: 0.08rem;
+}
+#hui-action-sheet ul li {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  border-bottom: 0.01333333rem solid #ebebeb;
+  font-size: 0.42666667rem;
+}
+#hui-action-sheet ul li a {
+  display: block;
+}
+#hui-action-sheet-cancel {
+  border-top: 0.04rem solid #ebebeb;
+  color: #999999 !important;
+}
+.collect,
+.heart {
+  width: 4rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 0.48rem;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+  transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  border-radius: 0.26666667rem;
+  -moz-border-radius: 0.26666667rem;
+  -webkit-border-radius: 0.26666667rem;
+  -ms-border-radius: 0.26666667rem;
+  -o-border-radius: 0.26666667rem;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-background: rgba(0, 0, 0, 0.5);
+  -moz-background: rgba(0, 0, 0, 0.5);
+  -ms-background: rgba(0, 0, 0, 0.5);
+  -o-background: rgba(0, 0, 0, 0.5);
+}
+.heart {
+  width: 2.66666667rem;
+}

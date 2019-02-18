@@ -1,0 +1,212 @@
+/*字体库*/
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */ url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../fonts/iconfont.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+/*字体库 end*/
+.flex {
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+  justify-content: space-between;
+}
+/*header*/
+#header {
+  width: 100%;
+  height: 1.82666667rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-background: rgba(0, 0, 0, 0.7);
+  -moz-background: rgba(0, 0, 0, 0.7);
+  -ms-background: rgba(0, 0, 0, 0.7);
+  -o-background: rgba(0, 0, 0, 0.7);
+}
+#header .header-top {
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+  justify-content: space-between;
+  color: white;
+  font-size: 0.25333333rem;
+  padding: 0.16rem 0.4rem 0.32rem 0.45333333rem;
+}
+#header .header-top p:last-child span {
+  padding-right: 0.05333333rem;
+}
+#header .header-top p:last-child span:nth-child(2) {
+  padding: 0 0.22666667rem 0 0.13333333rem;
+}
+#header .header-top p:last-child span:first-child {
+  font-family: "iconfont";
+  font-size: 0.33333333rem;
+}
+#header .header-top p:last-child span:first-child:after {
+  content: '3G';
+  font-size: 0.2rem;
+  vertical-align: top;
+}
+#header .header-search {
+  width: 8.97333333rem;
+  height: 0.70666667rem;
+  border: 2px solid #fff;
+  border-radius: 0.34666667rem;
+  -moz-border-radius: 0.34666667rem;
+  -webkit-border-radius: 0.34666667rem;
+  display: -webkit-box;
+  /*老版本：iOS 6-, Safari 3.1-6*/
+  display: -moz-box;
+  /*老版本：Firefox 19- */
+  display: -ms-flexbox;
+  /*混合版本：IE10*/
+  display: -webkit-flex;
+  /*新版本：Chrome*/
+  display: flex;
+  /*标准规范：Opera 12.1, Firefox 20+*/
+  justify-content: space-between;
+  position: relative;
+  left: 50%;
+  margin-left: -4.48rem;
+}
+#header .header-search input {
+  width: 8.17333333rem;
+  height: 100%;
+  line-height: 0.70666667rem;
+  color: #fff;
+  font-size: 0.34666667rem;
+  background: transparent;
+  -webkit-background: transparent;
+  -moz-background: transparent;
+  -ms-background: transparent;
+  -o-background: transparent;
+}
+#header .header-search input::-webkit-input-placeholder {
+  color: #fff;
+}
+#header .header-search input::-moz-input-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+#header .header-search input:-moz-input-placeholder {
+  /* Firefox 4 to 18 */
+  color: #fff;
+}
+#header .header-search input:-ms-input-placeholder {
+  color: #fff;
+}
+#header .header-search:before {
+  content: '';
+  width: 0.8rem;
+  height: 100%;
+  background: url(../images/sprites.png) no-repeat -4.98666667rem -2.30666667rem;
+  -webkit-background: url(../images/sprites.png) no-repeat -4.98666667rem -2.30666667rem;
+  -moz-background: url(../images/sprites.png) no-repeat -4.98666667rem -2.30666667rem;
+  -ms-background: url(../images/sprites.png) no-repeat -4.98666667rem -2.30666667rem;
+  -o-background: url(../images/sprites.png) no-repeat -4.98666667rem -2.30666667rem;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+/*header end*/
+/*footer*/
+#footer {
+  width: 100%;
+  height: 1.33333333rem;
+  background: #ededed;
+  -webkit-background: #ededed;
+  -moz-background: #ededed;
+  -ms-background: #ededed;
+  -o-background: #ededed;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+#footer ul {
+  display: flex;
+  height: 100%;
+}
+#footer ul li {
+  width: 25%;
+  text-align: center;
+}
+#footer ul li a {
+  display: block;
+  font-size: 0.26666667rem;
+}
+#footer ul li a:before {
+  content: '';
+  display: block;
+  width: 0.72rem;
+  height: 0.90666667rem;
+  position: relative;
+  left: 50%;
+  margin-left: -0.36rem;
+  background: url(../images/sprites.png) no-repeat -0.56rem -2.13333333rem;
+  -webkit-background: url(../images/sprites.png) no-repeat -0.56rem -2.13333333rem;
+  -moz-background: url(../images/sprites.png) no-repeat -0.56rem -2.13333333rem;
+  -ms-background: url(../images/sprites.png) no-repeat -0.56rem -2.13333333rem;
+  -o-background: url(../images/sprites.png) no-repeat -0.56rem -2.13333333rem;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#footer ul li:nth-of-type(2) a:before {
+  background: url(../images/sprites.png) no-repeat -1.73333333rem -1.09333333rem;
+  -webkit-background: url(../images/sprites.png) no-repeat -1.73333333rem -1.09333333rem;
+  -moz-background: url(../images/sprites.png) no-repeat -1.73333333rem -1.09333333rem;
+  -ms-background: url(../images/sprites.png) no-repeat -1.73333333rem -1.09333333rem;
+  -o-background: url(../images/sprites.png) no-repeat -1.73333333rem -1.09333333rem;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#footer ul li:nth-of-type(3) a:before {
+  background: url(../images/sprites.png) no-repeat -2.8rem -1.09333333rem;
+  -webkit-background: url(../images/sprites.png) no-repeat -2.8rem -1.09333333rem;
+  -moz-background: url(../images/sprites.png) no-repeat -2.8rem -1.09333333rem;
+  -ms-background: url(../images/sprites.png) no-repeat -2.8rem -1.09333333rem;
+  -o-background: url(../images/sprites.png) no-repeat -2.8rem -1.09333333rem;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+#footer ul li:nth-of-type(4) a:before {
+  background: url(../images/sprites.png) no-repeat -3.92rem -1.09333333rem;
+  -webkit-background: url(../images/sprites.png) no-repeat -3.92rem -1.09333333rem;
+  -moz-background: url(../images/sprites.png) no-repeat -3.92rem -1.09333333rem;
+  -ms-background: url(../images/sprites.png) no-repeat -3.92rem -1.09333333rem;
+  -o-background: url(../images/sprites.png) no-repeat -3.92rem -1.09333333rem;
+  background-size: 10rem 12.66666667rem;
+  -webkit-background-size: 10rem 12.66666667rem;
+  -moz-background-size: 10rem 12.66666667rem;
+  -ms-background-size: 10rem 12.66666667rem;
+  -o-background-size: 10rem 12.66666667rem;
+}
+/*footer end*/

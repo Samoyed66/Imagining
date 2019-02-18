@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <!-- 忽略页面中的数字识别为电话号码,email识别 -->
+	    <meta name="format-detection" content="telephone=no, email=no" />
+	    <!-- 启用360浏览器的极速模式(webkit) -->
+	    <meta name="renderer" content="webkit">
+	    <!-- 避免IE使用兼容模式 -->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	    <meta name="HandheldFriendly" content="true">
+	    <!-- 微软的老式浏览器 -->
+	    <meta name="MobileOptimized" content="320">
+	    <!-- uc强制竖屏 -->
+	    <meta name="screen-orientation" content="portrait">
+	    <!-- QQ强制竖屏 -->
+	    <meta name="x5-orientation" content="portrait">
+	    <!-- UC强制全屏 -->
+	    <meta name="full-screen" content="yes">
+	    <!-- QQ强制全屏 -->
+	    <meta name="x5-fullscreen" content="true">
+	    <!-- UC应用模式 -->
+	    <meta name="browsermode" content="application">
+	    <!-- QQ应用模式 -->
+	    <meta name="x5-page-mode" content="app">
+		<link rel="stylesheet" type="text/css" href="lib/css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/rest.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tour-list.css"/>
+		<script type="text/javascript" src="lib/js/rem.js"></script>
+	</head>
+	<body>
+		<ul id="dark"></ul>
+		<!--城市列表页-->
+		<div id="city-wrap">
+			<!--显示点击的是哪一个字母-->
+			<div id="showLetter" class="showLetter"><span>A</span></div>
+			<!--城市索引查询-->
+			<div class="letter">
+			    <ul>
+			      <li><a href="javascript:;">热门</a></li>
+			      <li><a href="javascript:;">历史</a></li>
+			      <li><a href="javascript:;">A</a></li>
+			      <li><a href="javascript:;">B</a></li>
+			      <li><a href="javascript:;">C</a></li>
+			      <li><a href="javascript:;">D</a></li>
+			      <li><a href="javascript:;">E</a></li>
+			      <li><a href="javascript:;">F</a></li>
+			      <li><a href="javascript:;">G</a></li>
+			      <li><a href="javascript:;">H</a></li>
+			      <li><a href="javascript:;">J</a></li>
+			      <li><a href="javascript:;">K</a></li>
+			      <li><a href="javascript:;">L</a></li>
+			      <li><a href="javascript:;">M</a></li>
+			      <li><a href="javascript:;">N</a></li>
+			      <li><a href="javascript:;">P</a></li>
+			      <li><a href="javascript:;">Q</a></li>
+			      <li><a href="javascript:;">R</a></li>
+			      <li><a href="javascript:;">S</a></li>
+			      <li><a href="javascript:;">T</a></li>
+			      <li><a href="javascript:;">W</a></li>
+			      <li><a href="javascript:;">X</a></li>
+			      <li><a href="javascript:;">Y</a></li>
+			      <li><a href="javascript:;">Z</a></li>
+			    </ul>
+			  </div>
+			<!--城市列表-->
+			<div class="container">
+			  <div class="city"></div>
+			</div>
+		</div>
+		<!--map-->
+		<div id="allmap"></div>
+		<!--header-->
+		<header id="header">
+			<div class="header-top">
+				<p>中国移动  3G</p>
+				<p>
+					<span>&#xe6f2;</span>
+					<span class="fa fa-signal"></span>
+					<span class="fa fa-battery-2"></span>
+					16:25
+				</p>
+			</div>
+			<div class="tour-head">
+				<a href="tour-index.html" class="back"></a>
+				<div class="tour-des">北京</div>
+				<div class="tour-search">
+					<input type="search" placeholder="目的地/关键字"/>
+				</div>
+			</div>
+		</header>
+		<!--header end-->
+		<!--tour-cont-->
+		<section id="box">
+			<ul class="box-head">
+				<li class="active">全部</li>
+				<li>出发地参团</li>
+				<li>目的地参团</li>
+				<li>自由行</li>
+				<li>游轮</li>
+			</ul>
+			<div class="wrap">
+				<div class="list-cont icon">
+					<div class="list-pic">
+						<i></i>
+						<a href="tour-details.html">
+							<img src="images/information/information-list01.jpg"/>
+						</a>
+					</div>
+					<div class="pic-cont">
+						<h4>
+							<a href="tour-details.html">【宿古北之光】古北水镇2日1晚跟团游古北水镇2日1晚跟团游</a>
+						</h4>
+						<div>
+							<span>无购物</span>
+							<span>无自费</span>
+							<span>爸妈放心游</span>
+						</div>
+						<p>
+							<span>北京出发</span>5星古北之光温泉酒店住宿
+						</p>
+						<p>排期: 每周四、五、六、日</p>
+						<div>
+							<p>
+								<span>
+									<i>¥</i>
+									2699
+								</span>
+								起
+							</p>
+							<p>256人<span>出游</span></p>
+							<p>69条<span>点评</span></p>
+							<p><span>5</span>分</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-cont icon">
+					<div class="list-pic">
+						<i></i>
+						<a href="tour-details.html">
+							<img src="images/information/information-list02.jpg"/>
+						</a>
+					</div>
+					<div class="pic-cont">
+						<h4>
+							<a href="tour-details.html">【游圣诞小镇】密云1日自由行·南山密云1日自由行</a>
+						</h4>
+						<div>
+							<span>无购物</span>
+							<span>无自费</span>
+							<span>爸妈放心游</span>
+						</div>
+						<p>
+							<span>北京出发</span>独揽“全球不容错过的25处风景之首”
+						</p>
+						<p>排期: 每周三、四、五、六、日</p>
+						<div>
+							<p>
+								<span>
+									<i>¥</i>
+									1099
+								</span>
+								起
+							</p>
+							<p>203人<span>出游</span></p>
+							<p>38条<span>点评</span></p>
+							<p><span>5</span>分</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-cont">
+					<div class="list-pic">
+						<a href="tour-details.html">
+							<img src="images/information/information-list03.jpg"/>
+						</a>
+					</div>
+					<div class="pic-cont">
+						<h4>
+							<a href="tour-details.html">北京1日自由行·八达岭长城+十三陵定日自由行·八达岭长城+十三陵定</a>
+						</h4>
+						<div>
+							<span>无购物</span>
+							<span>无自费</span>
+							<span>爸妈放心游</span>
+						</div>
+						<p>
+							<span>北京出发</span>带你领略京都之美
+						</p>
+						<p>排期: 每周六、日</p>
+						<div>
+							<p>
+								<span>
+									<i>¥</i>
+									159
+								</span>
+								起
+							</p>
+							<p>390人<span>出游</span></p>
+							<p>90条<span>点评</span></p>
+							<p><span>5</span>分</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-cont">
+					<div class="list-pic">
+						<a href="tour-details.html">
+							<img src="images/information/information-list04.jpg"/>
+						</a>
+					</div>
+					<div class="pic-cont">
+						<h4>
+							<a href="tour-details.html">怀柔2日自由行(4钻)【每人减100元】怀柔2日自由行(4钻)【每人减100元】</a>
+						</h4>
+						<div>
+							<span>无购物</span>
+							<span>无自费</span>
+							<span>爸妈放心游</span>
+						</div>
+						<p>
+							<span>北京出发</span>限时特惠，预定即享每人减100元
+						</p>
+						<p>排期: 每周五、六、日</p>
+						<div>
+							<p>
+								<span>
+									<i>¥</i>
+									269
+								</span>
+								起
+							</p>
+							<p>220人<span>出游</span></p>
+							<p>65条<span>点评</span></p>
+							<p><span>5</span>分</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-cont">
+					<div class="list-pic">
+						<a href="tour-details.html">
+							<img src="images/information/information-list05.jpg"/>
+						</a>
+					</div>
+					<div class="pic-cont">
+						<h4>
+							<a href="tour-details.html">北京5日4晚跟团游·一价全含·无自费北京5日4晚跟团游·一价全含·无自费</a>
+						</h4>
+						<div>
+							<span>无购物</span>
+							<span>无自费</span>
+							<span>爸妈放心游</span>
+						</div>
+						<p>
+							<span>北京出发</span>深度全面的浏览世界文化遗产
+						</p>
+						<p>排期: 每周四、五、六、日</p>
+						<div>
+							<p>
+								<span>
+									<i>¥</i>
+									2099
+								</span>
+								起
+							</p>
+							<p>189人<span>出游</span></p>
+							<p>56条<span>点评</span></p>
+							<p><span>5</span>分</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--tour-cont end-->
+		<!--footer-->
+		<footer id="footer">
+			<ul>
+				<li>
+					<a href="tour-index.html">旅游首页</a>
+				</li>
+				<li>
+					<a href="destination.html">目 的 地</a>
+				</li>
+				<li>
+					<a href="history.html">浏 览 历 史</a>
+				</li>
+				<li>
+					<a href="preson.html">个 人</a>
+				</li>
+			</ul>
+		</footer>
+		<!--footer end-->
+		<!--百度模板-->
+		<script type="text/html" id="tourContList">
+			<%for (var q = 0; q<menulist.length; q++){%>
+				<div class="list-cont">
+					<div class="list-pic">
+						<i></i>
+						<a href="tour-details.html">
+							<img src=<%=menulist[q].msrc%>/>
+						</a>
+					</div>
+					<div class="pic-cont">
+						<h4>
+							<a href="tour-details.html"><%=menulist[q].title%></a>
+						</h4>
+						<div>
+							<span>无购物</span>
+							<span>无自费</span>
+							<span>爸妈放心游</span>
+						</div>
+						<p>
+							<span>北京出发</span><%=menulist[q].cont%>
+						</p>
+						<p><%=menulist[q].time%></p>
+						<div>
+							<p>
+								<span>
+									<i>¥</i>
+									<%=menulist[q].price%>
+								</span>
+								起
+							</p>
+							<p><%=menulist[q].num%><span>出游</span></p>
+							<p><%=menulist[q].comment%><span>点评</span></p>
+							<p><span>5</span>分</p>
+						</div>
+					</div>
+				</div>
+			<%}%>
+		</script>
+		<!--百度模板 end-->
+		<script type="text/javascript" src="lib/js/baiduTemplate.js"></script>
+		<script type="text/javascript" src="lib/js/zapot.min.js"></script>
+		<script type="text/javascript" src="lib/js/fx.js"></script>
+		<script type="text/javascript" src="lib/js/fx_methods.js"></script>
+		<script type="text/javascript" src="lib/js/selector.js"></script>
+		<script type="text/javascript" src="lib/js/touch.js"></script>
+		<script type="text/javascript" src="lib/js/city.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=25E5L0zcrz3RxFESCGNx2HjYgkmeRPg2"></script>
+		<script type="text/javascript" src="js/tour-list.js"></script>
+	</body>
+</html>

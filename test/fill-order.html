@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏。 -->
+	    <meta name="apple-mobile-web-app-capable" content="yes" />
+	    <!-- 这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	    <!-- 忽略页面中的数字识别为电话号码,email识别 -->
+	    <meta name="format-detection" content="telephone=no, email=no" />
+	    <!-- 启用360浏览器的极速模式(webkit) -->
+	    <meta name="renderer" content="webkit">
+	    <!-- 避免IE使用兼容模式 -->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	    <meta name="HandheldFriendly" content="true">
+	    <!-- 微软的老式浏览器 -->
+	    <meta name="MobileOptimized" content="320">
+	    <!-- uc强制竖屏 -->
+	    <meta name="screen-orientation" content="portrait">
+	    <!-- QQ强制竖屏 -->
+	    <meta name="x5-orientation" content="portrait">
+	    <!-- UC强制全屏 -->
+	    <meta name="full-screen" content="yes">
+	    <!-- QQ强制全屏 -->
+	    <meta name="x5-fullscreen" content="true">
+	    <!-- UC应用模式 -->
+	    <meta name="browsermode" content="application">
+	    <!-- QQ应用模式 -->
+	    <meta name="x5-page-mode" content="app">
+	    <link rel="stylesheet" type="text/css" href="css/rest.css"/>
+	    <link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/fill-order.css"/>
+	    <script type="text/javascript" src="lib/js/rem.js"></script>
+	</head>
+	<body>
+		<!--header-->
+		<header id="header">
+			<div class="header-top">
+				<p>中国移动  3G</p>
+				<p>
+					<span>&#xe6f2;</span>
+					<span class="fa fa-signal"></span>
+					<span class="fa fa-battery-2"></span>
+					16:25
+				</p>
+			</div>
+			<div class="header-back">
+				<a href="select.html" class="back"></a>
+				<p>订单填写</p>
+			</div>
+		</header>
+		<!--header end-->
+		<div class="alert">
+			<ul>
+				<li>
+					<label>姓名:</label>
+					<input type="text" />
+				</li>
+				<li>
+					<label>年龄:</label>
+					<input type="text" />
+				</li>
+				<li>
+					<label>男:</label>
+					<input type="radio" name="sex" value="男" />
+					<label>女:</label>
+					<input type="radio" name="sex" value="女" />
+				</li>
+				<li>
+					<label>身份证号</label>
+					<input type="number" />
+				</li>
+				<li>
+					<button>关闭</button>
+					<button>确认</button>
+				</li>
+			</ul>
+		</div>
+		<!--fill-cont-->
+		<section id="fill">
+			<div class="fill-title">
+				<h4>三亚5日4晚半自助游套餐</h4>
+				<p>出发日期: <span>2017-9-10</span></p>
+				<p>出行人数: <span>3 成人</span><span>预定限制></span></p>
+			</div>
+			<div class="fill-select">
+				<h4>去选择出行人<i></i></h4>
+				<p>为了您顺利出行</p>
+				<p>请务必保证填写项与出游所持证件一致！</p>
+				<ul>
+					<li class="fa fa-plus-square"></li>
+				</ul>
+			</div>
+			<div class="fill-select">
+				<h4><span>成</span>苏打苏塔<i></i></h4>
+				<h4><span>童</span>苏大大<i></i></h4>
+				<p>为了您顺利出行</p>
+				<p>请务必保证填写项与出游所持证件一致！</p>
+				<p>
+					<a href="javascript:;">更换出行人员></a>
+				</p>
+			</div>
+			<div class="fill-select">
+				<h4>联系人信息<i></i></h4>
+				<input type="text" placeholder="请填写联系人姓名" />
+				<input type="number" placeholder="请填写手机号码" />
+			</div>
+			<div class="fill-con">
+				1张券可用
+				<span class="fa fa-chevron-right"></span>
+			</div>
+			<div class="fill-select">
+				<hgroup>
+					<h6>发票</h6>
+					<h4>
+						<span>不需要发票</span>
+						<i></i>
+					</h4>
+					<div>
+						<ul>
+							<li>开发票</li>
+							<li>不需要发票</li>
+						</ul>
+					</div>
+				</hgroup>
+				<hgroup>
+					<h6>特殊要求</h6>
+					<h4>
+						<span>无</span>
+						<i></i>
+					</h4>
+					<div>
+						<ul>
+							<li>无</li>
+							<li>办理手续</li>
+							<li>办理入住</li>
+							<li>办理退税</li>
+						</ul>
+					</div>
+				</hgroup>
+			</div>
+			<div class="notice">
+				<div>
+					<p>航班价格变动频繁，<br />请在提交订单后25分钟内完成支付。</p>
+				</div>
+				<div>
+					<p>点击下一步表示已阅读并同意<a href="javascript:;">预订须知和重要条款</a>。</p>
+				</div>
+				<div>
+					<p>为支持绿色环保，默认电子合同，若需要签署纸质合同请致电客服。</p>
+				</div>
+			</div>
+		</section>
+		<!--fill-cont end-->
+		<!--footer-->
+		<footer id="footer">
+			<div class="footer-left">
+				<span><i>¥</i>6512</span>
+				<span>明细></span>
+			</div>
+			<a href="javascript:;">去支付</a>
+		</footer>
+		<!--footer end-->
+		<script type="text/javascript" src="lib/js/zapot.min.js"></script>
+		<script type="text/javascript" src="lib/js/selector.js"></script>
+		<script type="text/javascript" src="lib/js/touch.js"></script>
+		<script type="text/javascript" src="lib/js/fx.js"></script>
+		<script type="text/javascript" src="lib/js/fx_methods.js"></script>
+		<script type="text/javascript" src="js/fill-order.js"></script>
+	</body>
+</html>
